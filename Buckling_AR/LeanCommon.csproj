@@ -36,19 +36,19 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanDestroy.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanFormatString.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanCommon/Required/Scripts/LeanCommon.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanSelectableGraphicColor.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanSelectableBehaviour.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanSelectable.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanSelect.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanSpawn.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanSelectableSpriteRendererColor.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanPlane.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanRoll.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanSelectableRendererColor.cs" />
      <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanPath.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanSelect.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanFormatString.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanSelectableGraphicColor.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanCommon/Required/Scripts/LeanCommon.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanSelectableRendererColor.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanRoll.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanSelectableSpriteRendererColor.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanSelectableBehaviour.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanSpawn.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanPlane.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanDestroy.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanCommon/Extras/Scripts/LeanSelectable.cs" />
      <None Include="Assets/Plugins/CW/LeanCommon/LeanCommon.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>

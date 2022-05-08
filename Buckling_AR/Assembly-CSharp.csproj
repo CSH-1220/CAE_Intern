@@ -56,7 +56,13 @@
      <Compile Include="Assets/CodeMonkey/CMDebug.cs" />
      <Compile Include="Assets/CodeMonkey/Utils/FunctionPeriodic.cs" />
      <Compile Include="Assets/Scripts/GameManager.cs" />
+     <Compile Include="Assets/Scripts/PregamePage.cs" />
+     <Compile Include="Assets/Scripts/CheckTurnPageButton.cs" />
+     <Compile Include="Assets/Scripts/CheckParameterSeen.cs" />
+     <Compile Include="Assets/Fonts/Script/scriptTexttest.cs" />
+     <None Include="Assets/Fonts/Documentation/JazzCreateAltKeys_BubbleFont.txt" />
      <None Include="Assets/CodeMonkey/README.txt" />
+     <None Include="Assets/Fonts/Documentation/JazzCreateBubble_VersionHistory_1.1.txt" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

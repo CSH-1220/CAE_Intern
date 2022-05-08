@@ -36,33 +36,33 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanFingerFilter.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanTwistRotate.cs" />
      <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanScreenDepth.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanTouch/Examples/Scripts/LeanPulseScale.cs" />
      <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanSelectableByFinger.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanFingerDown.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanFingerUp.cs" />
      <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanSelectableByFingerBehaviour.cs" />
      <Compile Include="Assets/Plugins/CW/LeanTouch/Required/Scripts/LeanGesture.cs" />
      <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanPinchScale.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanDragTranslate.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanFingerFilter.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanDragCamera.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanTwistRotateAxis.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanTouch/Required/Scripts/LeanSnapshot.cs" />
      <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanFingerOld.cs" />
      <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanSwipeBase.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanDragTranslate.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanScreenQuery.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanTouch/Examples/Scripts/LeanTouchEvents.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanDragCamera.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanFingerUpdate.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanSelectByFinger.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanTouch/Required/Scripts/LeanTouch.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanFingerDown.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanTouch/Examples/Scripts/LeanPulseScale.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanFingerTap.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanFingerUp.cs" />
      <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanTouchSimulator.cs" />
      <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanFingerData.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanTouch/Required/Scripts/LeanSnapshot.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanFingerTap.cs" />
      <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanFingerSwipe.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanFingerUpdate.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanTouch/Examples/Scripts/LeanTouchEvents.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanTouch/Required/Scripts/LeanFinger.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanSelectByFinger.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanScreenQuery.cs" />
      <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanDragTrail.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanTwistRotate.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanTouch/Required/Scripts/LeanTouch.cs" />
-     <Compile Include="Assets/Plugins/CW/LeanTouch/Extras/Scripts/LeanTwistRotateAxis.cs" />
+     <Compile Include="Assets/Plugins/CW/LeanTouch/Required/Scripts/LeanFinger.cs" />
      <None Include="Assets/Plugins/CW/LeanTouch/LeanTouch.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>

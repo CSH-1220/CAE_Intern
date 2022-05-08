@@ -393,7 +393,11 @@
 "Assets/CodeMonkey/Utils/World_Bar.cs"
 "Assets/CodeMonkey/Utils/World_Mesh.cs"
 "Assets/CodeMonkey/Utils/World_Sprite.cs"
+"Assets/Fonts/Script/scriptTexttest.cs"
+"Assets/Scripts/CheckParameterSeen.cs"
+"Assets/Scripts/CheckTurnPageButton.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/PregamePage.cs"
 -langversion:9.0
 
 /deterministic

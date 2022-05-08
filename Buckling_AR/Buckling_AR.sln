@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{59fd6e53-47be-a907-ce3c-5d7ed1c3d318}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CW.Common", "CW.Common.csproj", "{461611bb-b52e-4114-5980-e7be02990d25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{59fd6e53-47be-a907-ce3c-5d7ed1c3d318}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeanTouch", "LeanTouch.csproj", "{fc70653f-7749-f619-f635-20ae0cb7decd}"
 EndProject
@@ -14,10 +14,10 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{59fd6e53-47be-a907-ce3c-5d7ed1c3d318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{59fd6e53-47be-a907-ce3c-5d7ed1c3d318}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{461611bb-b52e-4114-5980-e7be02990d25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{461611bb-b52e-4114-5980-e7be02990d25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59fd6e53-47be-a907-ce3c-5d7ed1c3d318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59fd6e53-47be-a907-ce3c-5d7ed1c3d318}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{fc70653f-7749-f619-f635-20ae0cb7decd}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{fc70653f-7749-f619-f635-20ae0cb7decd}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{eb21f7db-e04e-2833-1d28-af31608ffa7e}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
