@@ -41,9 +41,12 @@
      <Compile Include="Assets/CodeMonkey/MonoBehaviours/CameraFollowSetup.cs" />
      <Compile Include="Assets/CodeMonkey/MonoBehaviours/CameraFollow.cs" />
      <Compile Include="Assets/CodeMonkey/Utils/World_Bar.cs" />
+     <Compile Include="Assets/Scripts/CheckParameterSeen.cs" />
      <Compile Include="Assets/CodeMonkey/Utils/FunctionUpdater.cs" />
+     <Compile Include="Assets/Scripts/PregamePage.cs" />
      <Compile Include="Assets/CodeMonkey/Utils/FunctionTimer.cs" />
      <Compile Include="Assets/CodeMonkey/Utils/UI_Sprite.cs" />
+     <Compile Include="Assets/Fonts/Script/scriptTexttest.cs" />
      <Compile Include="Assets/CodeMonkey/Utils/UI_TextComplex.cs" />
      <Compile Include="Assets/CodeMonkey/Utils/Button_Sprite.cs" />
      <Compile Include="Assets/CodeMonkey/Assets.cs" />
@@ -53,13 +56,10 @@
      <Compile Include="Assets/CodeMonkey/Utils/UI_Bar.cs" />
      <Compile Include="Assets/CodeMonkey/MonoBehaviours/ComponentActions.cs" />
      <Compile Include="Assets/CodeMonkey/Utils/UI_BarMultiple.cs" />
+     <Compile Include="Assets/Scripts/CheckTurnPageButton.cs" />
      <Compile Include="Assets/CodeMonkey/CMDebug.cs" />
      <Compile Include="Assets/CodeMonkey/Utils/FunctionPeriodic.cs" />
      <Compile Include="Assets/Scripts/GameManager.cs" />
-     <Compile Include="Assets/Scripts/PregamePage.cs" />
-     <Compile Include="Assets/Scripts/CheckTurnPageButton.cs" />
-     <Compile Include="Assets/Scripts/CheckParameterSeen.cs" />
-     <Compile Include="Assets/Fonts/Script/scriptTexttest.cs" />
      <None Include="Assets/Fonts/Documentation/JazzCreateAltKeys_BubbleFont.txt" />
      <None Include="Assets/CodeMonkey/README.txt" />
      <None Include="Assets/Fonts/Documentation/JazzCreateBubble_VersionHistory_1.1.txt" />
