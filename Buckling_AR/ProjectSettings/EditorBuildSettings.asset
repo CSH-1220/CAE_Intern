@@ -4,7 +4,22 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/00_PreGame.unity
+    guid: 818d3dc1c254141b198bf20195ca2d91
+  - enabled: 1
+    path: Assets/Scenes/01_GamePlay.unity
+    guid: 0f70b96ebee2149fba22511fbcf21afc
+  - enabled: 1
+    path: Assets/Scenes/02_EnlargeSceneForColumn1.unity
+    guid: bb851bc3a38ce46148e079e23f403fc2
+  - enabled: 1
+    path: Assets/Scenes/03_EnlargeSceneForColumn2.unity
+    guid: c6ce81dacebe14cc0869332d526df3fd
+  - enabled: 1
+    path: Assets/Scenes/04_CreateScene.unity
+    guid: 697b856b1e9904edbbde8deb0cdef328
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 14c49b35e286d46fb85a53588082f3c0, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: d636f506bffe840d1a83bb62ed32064e, type: 2}
