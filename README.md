@@ -30,3 +30,5 @@ a. 簡單2D UI 設置
 
 * SOGA工作室-Unity3D精神時光屋-UGUI系統教學: https://www.youtube.com/playlist?list=PLy_3OrYcBgvsEfQsLL6gZ_jOBRgLYrEQ6
 * C#基本觀念：https://www.youtube.com/watch?v=T9BeejD3i0g
+
+### C. 有限元素分析(FEA)概念
