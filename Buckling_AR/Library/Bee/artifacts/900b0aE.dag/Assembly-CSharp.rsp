@@ -399,7 +399,8 @@
 "Assets/Scripts/CheckParameterSeen.cs"
 "Assets/Scripts/CheckTurnPageButton.cs"
 "Assets/Scripts/GameManager.cs"
-"Assets/Scripts/PregamePage.cs"
+"Assets/Scripts/PageI_Question.cs"
+"Assets/Scripts/PreGamePage.cs"
 -langversion:9.0
 
 /deterministic

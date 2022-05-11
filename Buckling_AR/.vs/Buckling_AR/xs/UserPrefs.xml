@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{536EFD59-BE47-07A9-CE3C-5D7ED1C3D318}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PageI_Question.cs">
+    <Files>
+      <File FileName="Assets/Scripts/CheckTurnPageButton.cs" Line="15" Column="41" />
+      <File FileName="Assets/PreGamePage.cs" Line="64" Column="100" />
+      <File FileName="Assets/Scripts/PageI_Question.cs" Line="55" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6baf2295-3769-48ef-8f00-a01d00de8fa2" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
