@@ -4,9 +4,9 @@ Project Name: Development and Evaluation of Mixed Reality-Based Education Tools 
 
 ## Week 1:
 
-### A. 熟悉版本控制--
+### A. 熟悉版本控制
 
-學習操作GitHub(推薦使用GitHub Desktop)
+**學習操作GitHub(推薦使用GitHub Desktop)** 
 
 連結：
 
