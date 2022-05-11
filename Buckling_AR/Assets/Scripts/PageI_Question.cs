@@ -19,10 +19,10 @@ public class PageI_Question : MonoBehaviour
 
     public void ShowAnswer()
     {
-                QuestionMark.SetActive(false);
-                QuestionText.SetActive(false);
-                Content.SetActive(true);
-                Question.SetActive(true);
+    QuestionMark.SetActive(false);
+    QuestionText.SetActive(false);
+    Content.SetActive(true);
+    Question.SetActive(true);
     }
 
 

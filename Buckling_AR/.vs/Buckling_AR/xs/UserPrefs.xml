@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{536EFD59-BE47-07A9-CE3C-5D7ED1C3D318}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PageI_Question.cs">
     <Files>
-      <File FileName="Assets/Scripts/CheckTurnPageButton.cs" Line="15" Column="41" />
+      <File FileName="Assets/Scripts/CheckTurnPageButton.cs" Line="44" Column="14" />
       <File FileName="Assets/PreGamePage.cs" Line="64" Column="100" />
-      <File FileName="Assets/Scripts/PageI_Question.cs" Line="55" Column="1" />
+      <File FileName="Assets/Scripts/PageI_Question.cs" Line="25" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
