@@ -1,0 +1,516 @@
+ 400x600                                                                 
+                         ls-dyna smp.123264 d           date 01/12/2018
+
+{BEGIN LEGEND}
+ Entity #        Title
+        0     bottom                                                                
+        0     middle                                                                
+{END LEGEND}
+
+ single point constraint forces
+
+ output at time =   0.00000E+00
+ node=    63 local x,y,z forces =    0.0000E+00    0.0000E+00    0.0000E+00  setid=       0
+ node=  3186 local x,y,z forces =    0.0000E+00    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =    0.0000E+00    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =    0.0000E+00    0.0000E+00    0.0000E+00
+ output at time =   2.00000E-04
+ node=    63 local x,y,z forces =    1.3885E-01   -3.6373E-04   -1.2568E+06  setid=       0
+ node=  3186 local x,y,z forces =    4.6678E+03    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -4.6676E+03    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =    3.3350E-01   -3.6373E-04   -1.2568E+06
+ output at time =   4.00000E-04
+ node=    63 local x,y,z forces =   -4.3827E+01   -5.2616E-01   -2.5135E+06  setid=       0
+ node=  3186 local x,y,z forces =    2.8873E+04    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -2.8875E+04    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -4.5774E+01   -5.2616E-01   -2.5135E+06
+ output at time =   6.00000E-04
+ node=    63 local x,y,z forces =   -1.1570E+02   -2.2971E+00   -3.7702E+06  setid=       0
+ node=  3186 local x,y,z forces =    2.2650E+04    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -2.2650E+04    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.1555E+02   -2.2971E+00   -3.7702E+06
+ output at time =   8.00000E-04
+ node=    63 local x,y,z forces =    6.1498E+00    1.7887E-01   -5.0134E+06  setid=       0
+ node=  3186 local x,y,z forces =    1.9581E+04    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -1.9584E+04    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =    2.8245E+00    1.7887E-01   -5.0134E+06
+ output at time =   1.00000E-03
+ node=    63 local x,y,z forces =    7.1738E+01   -1.7870E+00   -5.7847E+06  setid=       0
+ node=  3186 local x,y,z forces =    5.5759E+04    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -5.5756E+04    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =    7.4224E+01   -1.7870E+00   -5.7847E+06
+ output at time =   1.20000E-03
+ node=    63 local x,y,z forces =    1.2747E+02    1.6887E+00   -5.8702E+06  setid=       0
+ node=  3186 local x,y,z forces =    1.4195E+05    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -1.4191E+05    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =    1.6380E+02    1.6887E+00   -5.8702E+06
+ output at time =   1.40000E-03
+ node=    63 local x,y,z forces =   -5.5308E+01    8.9804E-03   -5.8991E+06  setid=       0
+ node=  3186 local x,y,z forces =    2.3091E+05    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -2.3100E+05    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.4664E+02    8.9804E-03   -5.8991E+06
+ output at time =   1.60000E-03
+ node=    63 local x,y,z forces =   -1.5132E+02    6.1441E-01   -5.9151E+06  setid=       0
+ node=  3186 local x,y,z forces =    3.2164E+05    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -3.2174E+05    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -2.4865E+02    6.1441E-01   -5.9151E+06
+ output at time =   1.80000E-03
+ node=    63 local x,y,z forces =   -1.9169E+02    7.8354E-01   -5.9258E+06  setid=       0
+ node=  3186 local x,y,z forces =    4.1407E+05    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -4.1420E+05    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -3.2430E+02    7.8354E-01   -5.9258E+06
+ output at time =   2.00000E-03
+ node=    63 local x,y,z forces =   -3.1184E+02   -1.4704E+01   -5.9346E+06  setid=       0
+ node=  3186 local x,y,z forces =    5.0304E+05    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -5.0316E+05    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -4.3499E+02   -1.4704E+01   -5.9346E+06
+ output at time =   2.20000E-03
+ node=    63 local x,y,z forces =   -4.7920E+02    1.6885E+00   -5.9422E+06  setid=       0
+ node=  3186 local x,y,z forces =    5.9362E+05    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -5.9378E+05    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -6.3986E+02    1.6885E+00   -5.9422E+06
+ output at time =   2.40000E-03
+ node=    63 local x,y,z forces =   -6.4690E+02   -7.7861E+00   -5.9487E+06  setid=       0
+ node=  3186 local x,y,z forces =    6.8395E+05    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -6.8412E+05    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -8.1179E+02   -7.7861E+00   -5.9487E+06
+ output at time =   2.60000E-03
+ node=    63 local x,y,z forces =   -7.5221E+02    6.5381E+00   -5.9545E+06  setid=       0
+ node=  3186 local x,y,z forces =    7.7372E+05    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -7.7392E+05    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -9.5059E+02    6.5381E+00   -5.9545E+06
+ output at time =   2.80000E-03
+ node=    63 local x,y,z forces =   -8.2220E+02   -1.8140E+01   -5.9596E+06  setid=       0
+ node=  3186 local x,y,z forces =    8.6336E+05    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -8.6353E+05    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -9.9800E+02   -1.8140E+01   -5.9596E+06
+ output at time =   3.00000E-03
+ node=    63 local x,y,z forces =   -8.9861E+02   -4.1752E+01   -5.9642E+06  setid=       0
+ node=  3186 local x,y,z forces =    9.5255E+05    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -9.5274E+05    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.0898E+03   -4.1752E+01   -5.9642E+06
+ output at time =   3.20000E-03
+ node=    63 local x,y,z forces =   -1.1951E+03   -4.2919E+01   -5.9696E+06  setid=       0
+ node=  3186 local x,y,z forces =    1.0415E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -1.0417E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.4285E+03   -4.2919E+01   -5.9696E+06
+ output at time =   3.40000E-03
+ node=    63 local x,y,z forces =   -1.2897E+03   -3.3661E+01   -5.9736E+06  setid=       0
+ node=  3186 local x,y,z forces =    1.1303E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -1.1306E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.5047E+03   -3.3661E+01   -5.9736E+06
+ output at time =   3.60000E-03
+ node=    63 local x,y,z forces =   -1.4772E+03   -4.6991E+00   -5.9778E+06  setid=       0
+ node=  3186 local x,y,z forces =    1.2189E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -1.2191E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.6920E+03   -4.6991E+00   -5.9778E+06
+ output at time =   3.80000E-03
+ node=    63 local x,y,z forces =   -1.6960E+03   -2.2288E+00   -5.9821E+06  setid=       0
+ node=  3186 local x,y,z forces =    1.3069E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -1.3072E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.9272E+03   -2.2288E+00   -5.9821E+06
+ output at time =   4.00000E-03
+ node=    63 local x,y,z forces =   -1.2704E+03   -6.6083E-01   -5.9838E+06  setid=       0
+ node=  3186 local x,y,z forces =    1.3947E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -1.3948E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.3683E+03   -6.6083E-01   -5.9838E+06
+ output at time =   4.20000E-03
+ node=    63 local x,y,z forces =   -1.5313E+03   -1.4591E-01   -5.9880E+06  setid=       0
+ node=  3186 local x,y,z forces =    1.4821E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -1.4823E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.6555E+03   -1.4591E-01   -5.9880E+06
+ output at time =   4.40000E-03
+ node=    63 local x,y,z forces =   -1.7033E+03   -4.3010E-02   -5.9917E+06  setid=       0
+ node=  3186 local x,y,z forces =    1.5692E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -1.5694E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.8438E+03   -4.3010E-02   -5.9917E+06
+ output at time =   4.60000E-03
+ node=    63 local x,y,z forces =   -2.1849E+03   -1.6477E-02   -5.9967E+06  setid=       0
+ node=  3186 local x,y,z forces =    1.6560E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -1.6562E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -2.3742E+03   -1.6477E-02   -5.9967E+06
+ output at time =   4.80000E-03
+ node=    63 local x,y,z forces =   -2.3439E+03   -2.0087E-02   -5.9999E+06  setid=       0
+ node=  3186 local x,y,z forces =    1.7424E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -1.7426E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -2.5306E+03   -2.0087E-02   -5.9999E+06
+ output at time =   5.00000E-03
+ node=    63 local x,y,z forces =   -2.5312E+03   -5.1286E-02   -6.0035E+06  setid=       0
+ node=  3186 local x,y,z forces =    1.8285E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -1.8287E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -2.7219E+03   -5.1286E-02   -6.0035E+06
+ output at time =   5.20000E-03
+ node=    63 local x,y,z forces =   -2.8855E+03    2.0644E-03   -6.0076E+06  setid=       0
+ node=  3186 local x,y,z forces =    1.9143E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -1.9145E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -3.1063E+03    2.0644E-03   -6.0076E+06
+ output at time =   5.40000E-03
+ node=    63 local x,y,z forces =   -2.9867E+03   -4.0425E-02   -6.0106E+06  setid=       0
+ node=  3186 local x,y,z forces =    1.9998E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -2.0000E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -3.1950E+03   -4.0425E-02   -6.0106E+06
+ output at time =   5.60000E-03
+ node=    63 local x,y,z forces =   -5.3697E+03   -2.9822E-01   -6.0320E+06  setid=       0
+ node=  3186 local x,y,z forces =    2.0895E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -2.0847E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -5.4713E+02   -2.9822E-01   -6.0320E+06
+ output at time =   5.80000E-03
+ node=    63 local x,y,z forces =   -5.5481E+03   -7.7016E-01   -6.0346E+06  setid=       0
+ node=  3186 local x,y,z forces =    2.1743E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -2.1696E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -9.0676E+02   -7.7016E-01   -6.0346E+06
+ output at time =   6.00000E-03
+ node=    63 local x,y,z forces =   -5.4376E+03    2.9394E-01   -6.0353E+06  setid=       0
+ node=  3186 local x,y,z forces =    2.2588E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -2.2543E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -9.1968E+02    2.9394E-01   -6.0353E+06
+ output at time =   6.20000E-03
+ node=    63 local x,y,z forces =   -5.9235E+03    3.1184E-01   -6.0394E+06  setid=       0
+ node=  3186 local x,y,z forces =    2.3428E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -2.3386E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.6956E+03    3.1184E-01   -6.0394E+06
+ output at time =   6.40000E-03
+ node=    63 local x,y,z forces =   -6.0260E+03   -3.9871E-01   -6.0415E+06  setid=       0
+ node=  3186 local x,y,z forces =    2.4267E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -2.4225E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.8671E+03   -3.9871E-01   -6.0415E+06
+ output at time =   6.60000E-03
+ node=    63 local x,y,z forces =   -5.6149E+03    3.4295E-01   -6.0405E+06  setid=       0
+ node=  3186 local x,y,z forces =    2.5102E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -2.5062E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.6478E+03    3.4295E-01   -6.0405E+06
+ output at time =   6.80000E-03
+ node=    63 local x,y,z forces =   -6.4616E+03    3.0597E-01   -6.0468E+06  setid=       0
+ node=  3186 local x,y,z forces =    2.5934E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -2.5895E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -2.6205E+03    3.0597E-01   -6.0468E+06
+ output at time =   7.00000E-03
+ node=    63 local x,y,z forces =   -6.7316E+03   -3.3537E-01   -6.0494E+06  setid=       0
+ node=  3186 local x,y,z forces =    2.6761E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -2.6725E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -3.1720E+03   -3.3537E-01   -6.0494E+06
+ output at time =   7.20000E-03
+ node=    63 local x,y,z forces =   -6.9096E+03   -8.6581E+00   -6.0519E+06  setid=       0
+ node=  3186 local x,y,z forces =    2.7588E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -2.7553E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -3.3914E+03   -8.6581E+00   -6.0519E+06
+ output at time =   7.40000E-03
+ node=    63 local x,y,z forces =   -7.1283E+03   -1.0230E+00   -6.0544E+06  setid=       0
+ node=  3186 local x,y,z forces =    2.8411E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -2.8377E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -3.7447E+03   -1.0230E+00   -6.0544E+06
+ output at time =   7.60000E-03
+ node=    63 local x,y,z forces =   -7.3385E+03   -3.6245E-01   -6.0569E+06  setid=       0
+ node=  3186 local x,y,z forces =    2.9230E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -2.9198E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -4.0736E+03   -3.6245E-01   -6.0569E+06
+ output at time =   7.80000E-03
+ node=    63 local x,y,z forces =   -7.4079E+03    3.3388E+00   -6.0587E+06  setid=       0
+ node=  3186 local x,y,z forces =    3.0048E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -3.0016E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -4.1876E+03    3.3388E+00   -6.0587E+06
+ output at time =   8.00000E-03
+ node=    63 local x,y,z forces =   -7.7982E+03   -7.3696E-01   -6.0620E+06  setid=       0
+ node=  3186 local x,y,z forces =    3.0861E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -3.0831E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -4.7832E+03   -7.3696E-01   -6.0620E+06
+ output at time =   8.20000E-03
+ node=    63 local x,y,z forces =   -6.5448E+03    1.4063E-02   -6.0555E+06  setid=       0
+ node=  3186 local x,y,z forces =    3.1636E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -3.1639E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -6.8536E+03    1.4063E-02   -6.0555E+06
+ output at time =   8.40000E-03
+ node=    63 local x,y,z forces =   -9.1860E+03   -2.0295E-01   -6.0748E+06  setid=       0
+ node=  3186 local x,y,z forces =    3.2504E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -3.2452E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -3.9427E+03   -2.0295E-01   -6.0748E+06
+ output at time =   8.60000E-03
+ node=    63 local x,y,z forces =   -8.5365E+03   -9.8046E-01   -6.0699E+06  setid=       0
+ node=  3186 local x,y,z forces =    3.3285E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -3.3258E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -5.8166E+03   -9.8046E-01   -6.0699E+06
+ output at time =   8.80000E-03
+ node=    63 local x,y,z forces =   -7.4438E+03   -1.1323E-02   -6.0645E+06  setid=       0
+ node=  3186 local x,y,z forces =    3.4054E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -3.4057E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -7.7712E+03   -1.1323E-02   -6.0645E+06
+ output at time =   9.00000E-03
+ node=    63 local x,y,z forces =   -8.4426E+03   -5.3979E-02   -6.0707E+06  setid=       0
+ node=  3186 local x,y,z forces =    3.4857E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -3.4858E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -8.4907E+03   -5.3979E-02   -6.0707E+06
+ output at time =   9.20000E-03
+ node=    63 local x,y,z forces =   -1.0103E+04   -1.2694E-01   -6.0840E+06  setid=       0
+ node=  3186 local x,y,z forces =    3.5704E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -3.5659E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -5.6016E+03   -1.2694E-01   -6.0840E+06
+ output at time =   9.40000E-03
+ node=    63 local x,y,z forces =   -8.2518E+03    5.7707E-02   -6.0731E+06  setid=       0
+ node=  3186 local x,y,z forces =    3.6445E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -3.6449E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -8.5863E+03    5.7707E-02   -6.0731E+06
+ output at time =   9.60000E-03
+ node=    63 local x,y,z forces =   -1.0528E+04    1.5310E-01   -6.0882E+06  setid=       0
+ node=  3186 local x,y,z forces =    3.7287E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -3.7246E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -6.4568E+03    1.5310E-01   -6.0882E+06
+ output at time =   9.80000E-03
+ node=    63 local x,y,z forces =   -1.1448E+04   -3.4905E-02   -6.0964E+06  setid=       0
+ node=  3186 local x,y,z forces =    3.8097E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -3.8036E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -5.2854E+03   -3.4905E-02   -6.0964E+06
+ output at time =   1.00000E-02
+ node=    63 local x,y,z forces =   -1.0274E+04    1.1981E-01   -6.0875E+06  setid=       0
+ node=  3186 local x,y,z forces =    3.8840E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -3.8820E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -8.2238E+03    1.1981E-01   -6.0875E+06
+ output at time =   1.02000E-02
+ node=    63 local x,y,z forces =   -1.0412E+04    3.6912E-01   -6.0931E+06  setid=       0
+ node=  3186 local x,y,z forces =    3.9651E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -3.9604E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -5.7162E+03    3.6912E-01   -6.0931E+06
+ output at time =   1.04000E-02
+ node=    63 local x,y,z forces =   -9.9652E+03   -2.3848E-01   -6.0895E+06  setid=       0
+ node=  3186 local x,y,z forces =    4.0382E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -4.0380E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -9.6763E+03   -2.3848E-01   -6.0895E+06
+ output at time =   1.06000E-02
+ node=    63 local x,y,z forces =   -1.1904E+04   -5.4372E-01   -6.1009E+06  setid=       0
+ node=  3186 local x,y,z forces =    4.1201E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -4.1163E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -8.1378E+03   -5.4372E-01   -6.1009E+06
+ output at time =   1.08000E-02
+ node=    63 local x,y,z forces =   -1.2675E+04   -2.4599E-01   -6.1075E+06  setid=       0
+ node=  3186 local x,y,z forces =    4.1993E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -4.1940E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -7.3534E+03   -2.4599E-01   -6.1075E+06
+ output at time =   1.10000E-02
+ node=    63 local x,y,z forces =   -1.1296E+04   -6.6199E+02   -6.0972E+06  setid=       0
+ node=  3186 local x,y,z forces =    4.3001E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -4.3004E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.1579E+04   -6.6199E+02   -6.0972E+06
+ output at time =   1.12000E-02
+ node=    63 local x,y,z forces =   -1.0714E+04   -2.7873E+02   -6.0975E+06  setid=       0
+ node=  3186 local x,y,z forces =    4.3508E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -4.3497E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -9.6923E+03   -2.7873E+02   -6.0975E+06
+ output at time =   1.14000E-02
+ node=    63 local x,y,z forces =   -1.2428E+04   -1.5977E+02   -6.1084E+06  setid=       0
+ node=  3186 local x,y,z forces =    4.4288E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -4.4254E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -9.0135E+03   -1.5977E+02   -6.1084E+06
+ output at time =   1.16000E-02
+ node=    63 local x,y,z forces =   -1.3560E+04   -8.1371E+01   -6.1158E+06  setid=       0
+ node=  3186 local x,y,z forces =    4.5067E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -4.5021E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -8.9303E+03   -8.1371E+01   -6.1158E+06
+ output at time =   1.18000E-02
+ node=    63 local x,y,z forces =   -1.4101E+04   -4.0323E+01   -6.1199E+06  setid=       0
+ node=  3186 local x,y,z forces =    4.5835E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -4.5784E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -9.0027E+03   -4.0323E+01   -6.1199E+06
+ output at time =   1.20000E-02
+ node=    63 local x,y,z forces =   -1.4459E+04   -2.1671E+01   -6.1228E+06  setid=       0
+ node=  3186 local x,y,z forces =    4.6596E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -4.6544E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -9.2549E+03   -2.1671E+01   -6.1228E+06
+ output at time =   1.22000E-02
+ node=    63 local x,y,z forces =   -1.4756E+04   -1.2454E+01   -6.1252E+06  setid=       0
+ node=  3186 local x,y,z forces =    4.7352E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -4.7300E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -9.6211E+03   -1.2454E+01   -6.1252E+06
+ output at time =   1.24000E-02
+ node=    63 local x,y,z forces =   -1.5029E+04   -6.1656E+00   -6.1274E+06  setid=       0
+ node=  3186 local x,y,z forces =    4.8104E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -4.8054E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.0045E+04   -6.1656E+00   -6.1274E+06
+ output at time =   1.26000E-02
+ node=    63 local x,y,z forces =   -1.5294E+04   -3.3867E+00   -6.1296E+06  setid=       0
+ node=  3186 local x,y,z forces =    4.8854E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -4.8806E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.0496E+04   -3.3867E+00   -6.1296E+06
+ output at time =   1.28000E-02
+ node=    63 local x,y,z forces =   -1.5556E+04   -1.8932E+00   -6.1317E+06  setid=       0
+ node=  3186 local x,y,z forces =    4.9601E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -4.9555E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.0956E+04   -1.8932E+00   -6.1317E+06
+ output at time =   1.30000E-02
+ node=    63 local x,y,z forces =   -1.5820E+04   -1.0672E+00   -6.1338E+06  setid=       0
+ node=  3186 local x,y,z forces =    5.0345E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -5.0301E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.1416E+04   -1.0672E+00   -6.1338E+06
+ output at time =   1.32000E-02
+ node=    63 local x,y,z forces =   -1.6084E+04   -5.3307E-01   -6.1359E+06  setid=       0
+ node=  3186 local x,y,z forces =    5.1087E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -5.1045E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.1881E+04   -5.3307E-01   -6.1359E+06
+ output at time =   1.34000E-02
+ node=    63 local x,y,z forces =   -1.6354E+04   -3.6852E-01   -6.1381E+06  setid=       0
+ node=  3186 local x,y,z forces =    5.1826E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -5.1786E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.2337E+04   -3.6852E-01   -6.1381E+06
+ output at time =   1.36000E-02
+ node=    63 local x,y,z forces =   -1.6634E+04   -2.7476E-01   -6.1402E+06  setid=       0
+ node=  3186 local x,y,z forces =    5.2563E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -5.2525E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.2773E+04   -2.7476E-01   -6.1402E+06
+ output at time =   1.38000E-02
+ node=    63 local x,y,z forces =   -1.6882E+04   -1.7519E-01   -6.1422E+06  setid=       0
+ node=  3186 local x,y,z forces =    5.3297E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -5.3261E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.3275E+04   -1.7519E-01   -6.1422E+06
+ output at time =   1.40000E-02
+ node=    63 local x,y,z forces =   -1.7177E+04   -1.5265E-01   -6.1445E+06  setid=       0
+ node=  3186 local x,y,z forces =    5.4030E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -5.3995E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.3678E+04   -1.5265E-01   -6.1445E+06
+ output at time =   1.42000E-02
+ node=    63 local x,y,z forces =   -1.7455E+04   -2.4007E-01   -6.1467E+06  setid=       0
+ node=  3186 local x,y,z forces =    5.4761E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -5.4727E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.4019E+04   -2.4007E-01   -6.1467E+06
+ output at time =   1.44000E-02
+ node=    63 local x,y,z forces =   -1.7748E+04   -1.5203E-01   -6.1489E+06  setid=       0
+ node=  3186 local x,y,z forces =    5.5487E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -5.5455E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.4559E+04   -1.5203E-01   -6.1489E+06
+ output at time =   1.46000E-02
+ node=    63 local x,y,z forces =   -1.8434E+04    2.0971E-01   -6.1536E+06  setid=       0
+ node=  3186 local x,y,z forces =    5.6226E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -5.6184E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.4239E+04    2.0971E-01   -6.1536E+06
+ output at time =   1.48000E-02
+ node=    63 local x,y,z forces =   -1.8476E+04   -5.2922E-02   -6.1543E+06  setid=       0
+ node=  3186 local x,y,z forces =    5.6941E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -5.6907E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.5069E+04   -5.2922E-02   -6.1543E+06
+ output at time =   1.50000E-02
+ node=    63 local x,y,z forces =   -1.9123E+04   -4.9572E-01   -6.1586E+06  setid=       0
+ node=  3186 local x,y,z forces =    5.7674E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -5.7631E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.4875E+04   -4.9572E-01   -6.1586E+06
+ output at time =   1.52000E-02
+ node=    63 local x,y,z forces =   -2.0972E+04   -3.8323E-01   -6.1663E+06  setid=       0
+ node=  3186 local x,y,z forces =    5.8410E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -5.8352E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.5159E+04   -3.8323E-01   -6.1663E+06
+ output at time =   1.54000E-02
+ node=    63 local x,y,z forces =   -1.9547E+04   -9.7949E-02   -6.1622E+06  setid=       0
+ node=  3186 local x,y,z forces =    5.9103E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -5.9067E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.5913E+04   -9.7949E-02   -6.1622E+06
+ output at time =   1.56000E-02
+ node=    63 local x,y,z forces =   -2.0096E+04   -3.0338E-01   -6.1658E+06  setid=       0
+ node=  3186 local x,y,z forces =    5.9827E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -5.9784E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.5739E+04   -3.0338E-01   -6.1658E+06
+ output at time =   1.58000E-02
+ node=    63 local x,y,z forces =   -2.0864E+04   -2.3761E-01   -6.1682E+06  setid=       0
+ node=  3186 local x,y,z forces =    6.0527E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -6.0493E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.7479E+04   -2.3761E-01   -6.1682E+06
+ output at time =   1.60000E-02
+ node=    63 local x,y,z forces =   -2.0637E+04   -3.4104E-01   -6.1696E+06  setid=       0
+ node=  3186 local x,y,z forces =    6.1243E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -6.1206E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.6974E+04   -3.4104E-01   -6.1696E+06
+ output at time =   1.62000E-02
+ node=    63 local x,y,z forces =   -1.8430E+04   -1.8145E+02   -6.1608E+06  setid=       0
+ node=  3186 local x,y,z forces =    6.1917E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -6.1910E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.7785E+04   -1.8145E+02   -6.1608E+06
+ output at time =   1.64000E-02
+ node=    63 local x,y,z forces =   -2.1686E+04   -1.5943E+02   -6.1738E+06  setid=       0
+ node=  3186 local x,y,z forces =    6.2641E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -6.2616E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.9198E+04   -1.5943E+02   -6.1738E+06
+ output at time =   1.66000E-02
+ node=    63 local x,y,z forces =   -2.1113E+04   -1.0323E+02   -6.1742E+06  setid=       0
+ node=  3186 local x,y,z forces =    6.3349E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -6.3321E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.8286E+04   -1.0323E+02   -6.1742E+06
+ output at time =   1.68000E-02
+ node=    63 local x,y,z forces =   -2.3679E+04   -9.5001E+01   -6.1849E+06  setid=       0
+ node=  3186 local x,y,z forces =    6.4083E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -6.4027E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.8095E+04   -9.5001E+01   -6.1849E+06
+ output at time =   1.70000E-02
+ node=    63 local x,y,z forces =   -2.3780E+04   -5.7341E+01   -6.1865E+06  setid=       0
+ node=  3186 local x,y,z forces =    6.4779E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -6.4726E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.8495E+04   -5.7341E+01   -6.1865E+06
+ output at time =   1.72000E-02
+ node=    63 local x,y,z forces =   -2.2823E+04   -3.0483E+01   -6.1849E+06  setid=       0
+ node=  3186 local x,y,z forces =    6.5464E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -6.5423E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.8672E+04   -3.0483E+01   -6.1849E+06
+ output at time =   1.74000E-02
+ node=    63 local x,y,z forces =   -2.5076E+04   -2.4796E+01   -6.1938E+06  setid=       0
+ node=  3186 local x,y,z forces =    6.6186E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -6.6121E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.8525E+04   -2.4796E+01   -6.1938E+06
+ output at time =   1.76000E-02
+ node=    63 local x,y,z forces =   -2.4888E+04   -1.9375E+01   -6.1940E+06  setid=       0
+ node=  3186 local x,y,z forces =    6.6867E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -6.6811E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.9356E+04   -1.9375E+01   -6.1940E+06
+ output at time =   1.78000E-02
+ node=    63 local x,y,z forces =   -2.3848E+04   -1.0380E+01   -6.1919E+06  setid=       0
+ node=  3186 local x,y,z forces =    6.7541E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -6.7500E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.9804E+04   -1.0380E+01   -6.1919E+06
+ output at time =   1.80000E-02
+ node=    63 local x,y,z forces =   -2.5895E+04   -1.0072E+01   -6.1998E+06  setid=       0
+ node=  3186 local x,y,z forces =    6.8252E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -6.8192E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -1.9850E+04   -1.0072E+01   -6.1998E+06
+ output at time =   1.82000E-02
+ node=    63 local x,y,z forces =   -2.4579E+04   -5.0097E+00   -6.1968E+06  setid=       0
+ node=  3186 local x,y,z forces =    6.8917E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -6.8875E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -2.0421E+04   -5.0097E+00   -6.1968E+06
+ output at time =   1.84000E-02
+ node=    63 local x,y,z forces =   -2.6528E+04   -4.9593E+00   -6.2041E+06  setid=       0
+ node=  3186 local x,y,z forces =    6.9621E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -6.9562E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -2.0619E+04   -4.9593E+00   -6.2041E+06
+ output at time =   1.86000E-02
+ node=    63 local x,y,z forces =   -2.7315E+04   -3.7156E+00   -6.2084E+06  setid=       0
+ node=  3186 local x,y,z forces =    7.0316E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -7.0246E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -2.0358E+04   -3.7156E+00   -6.2084E+06
+ output at time =   1.88000E-02
+ node=    63 local x,y,z forces =   -2.5699E+04   -1.8149E+00   -6.2042E+06  setid=       0
+ node=  3186 local x,y,z forces =    7.0966E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -7.0922E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -2.1286E+04   -1.8149E+00   -6.2042E+06
+ output at time =   1.90000E-02
+ node=    63 local x,y,z forces =   -2.7521E+04   -1.8087E+00   -6.2107E+06  setid=       0
+ node=  3186 local x,y,z forces =    7.1659E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -7.1601E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -2.1723E+04   -1.8087E+00   -6.2107E+06
+ output at time =   1.92000E-02
+ node=    63 local x,y,z forces =   -2.8170E+04   -1.3778E+00   -6.2143E+06  setid=       0
+ node=  3186 local x,y,z forces =    7.2344E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -7.2279E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -2.1674E+04   -1.3778E+00   -6.2143E+06
+ output at time =   1.94000E-02
+ node=    63 local x,y,z forces =   -2.8689E+04   -8.5437E-01   -6.2174E+06  setid=       0
+ node=  3186 local x,y,z forces =    7.3023E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -7.2953E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -2.1760E+04   -8.5437E-01   -6.2174E+06
+ output at time =   1.96000E-02
+ node=    63 local x,y,z forces =   -2.9120E+04   -6.9429E-01   -6.2200E+06  setid=       0
+ node=  3186 local x,y,z forces =    7.3697E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -7.3625E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -2.1973E+04   -6.9429E-01   -6.2200E+06
+ output at time =   1.98000E-02
+ node=    63 local x,y,z forces =   -2.9547E+04   -5.9283E-01   -6.2226E+06  setid=       0
+ node=  3186 local x,y,z forces =    7.4368E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -7.4295E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -2.2240E+04   -5.9283E-01   -6.2226E+06
+ output at time =   2.00000E-02
+ node=    63 local x,y,z forces =   -2.9876E+04   -4.6767E-01   -6.2247E+06  setid=       0
+ node=  3186 local x,y,z forces =    7.5036E+06    0.0000E+00    0.0000E+00  setid=       0
+ node=  3190 local x,y,z forces =   -7.4963E+06    0.0000E+00    0.0000E+00  setid=       0
+             force resultants   =   -2.2595E+04   -4.6767E-01   -6.2247E+06

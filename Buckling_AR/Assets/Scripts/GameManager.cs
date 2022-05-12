@@ -1,18 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void GoToPreGameScene()
     {
-        
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        }
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void GoToGamePlayScene()
     {
-        
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            if (PreGamePage.PageNumber == CheckTurnPageButton.PageOfLast)
+            {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+        }
     }
 }
