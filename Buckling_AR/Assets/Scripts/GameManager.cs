@@ -12,16 +12,25 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
 
+        if (SceneManager.GetActiveScene().buildIndex == 4)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 4);
+        }
+
     }
 
     public void GoToGamePlayScene()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 0)
+         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             if (PreGamePage.PageNumber == CheckTurnPageButton.PageOfLast)
             {
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 4)
+        {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
         }
     }
 }

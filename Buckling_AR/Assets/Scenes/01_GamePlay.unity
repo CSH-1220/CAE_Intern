@@ -381,7 +381,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 621278113}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -431,7 +431,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 58675817}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 131486461}
+        m_TargetAssemblyTypeName: ControlsForColumn2, Assembly-CSharp
+        m_MethodName: Renew
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &58675817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1239,6 +1251,55 @@ MonoBehaviour:
   Section2: {fileID: 1227360474}
   Length2: {fileID: 1052875280}
   Bracing2: {fileID: 2080980155}
+--- !u!1 &131486459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 131486460}
+  - component: {fileID: 131486461}
+  m_Layer: 5
+  m_Name: ControlsForColumn2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &131486460
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131486459}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 621278113}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &131486461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131486459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935c9c3f9e68e4a4cae6a4b95f5c49c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &151336398
 GameObject:
   m_ObjectHideFlags: 0
@@ -3321,7 +3382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NormalMaterialForColumn1: {fileID: 2100000, guid: 90657b0294f4f4a429674df36755a10c, type: 2}
   NormalMaterialForColumn2: {fileID: 2100000, guid: e0276ec6c780c4b16bbbe018d970ad89, type: 2}
-  StressMaterial: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  StressMaterial: {fileID: 2100000, guid: c4dab12b6ad08384ba8a3ce2f7eba5f7, type: 2}
   Column1: {fileID: 172468213}
   Column2: {fileID: 103822018}
   ColorPanel1: {fileID: 1690102301}
@@ -3435,7 +3496,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 621278113}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -3485,7 +3546,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 552456019}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 131486461}
+        m_TargetAssemblyTypeName: ControlsForColumn2, Assembly-CSharp
+        m_MethodName: Load
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &552456019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3647,6 +3720,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 600691505}
+  - component: {fileID: 600691506}
   m_Layer: 5
   m_Name: DisplacementBoard
   m_TagString: Untagged
@@ -3678,6 +3752,20 @@ RectTransform:
   m_AnchoredPosition: {x: -235, y: -232}
   m_SizeDelta: {x: 306.4233, y: 356.5599}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &600691506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600691504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8db4042cb4846f6b4327f1c51db481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Font: {fileID: 12800000, guid: 282648a4cd6434f1fb9fa153b7eab089, type: 3}
+  dotSprite: {fileID: 21300000, guid: 9150d7e95bbb6664f9003b200188f544, type: 3}
 --- !u!1 &600725748
 GameObject:
   m_ObjectHideFlags: 0
@@ -4044,6 +4132,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 131486460}
   - {fileID: 552456017}
   - {fileID: 58675815}
   - {fileID: 1891431148}
@@ -9572,7 +9661,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1476266785
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10925,6 +11014,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1690102302}
   - component: {fileID: 1690102304}
+  - component: {fileID: 1690102305}
   m_Layer: 5
   m_Name: ColorPanelForColumn1
   m_TagString: Untagged
@@ -10976,6 +11066,19 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &1690102305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690102301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0955fa3cbccfb4ec1a04c8721e8781a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Font: {fileID: 12800000, guid: 282648a4cd6434f1fb9fa153b7eab089, type: 3}
 --- !u!1 &1693041299
 GameObject:
   m_ObjectHideFlags: 0
@@ -11561,7 +11664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NormalMaterialForColumn1: {fileID: 2100000, guid: 90657b0294f4f4a429674df36755a10c, type: 2}
   NormalMaterialForColumn2: {fileID: 2100000, guid: e0276ec6c780c4b16bbbe018d970ad89, type: 2}
-  StressMaterial: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  StressMaterial: {fileID: 2100000, guid: c4dab12b6ad08384ba8a3ce2f7eba5f7, type: 2}
   Column1: {fileID: 172468213}
   Column2: {fileID: 103822018}
   ColorPanel1: {fileID: 1690102301}
@@ -12255,7 +12358,7 @@ RectTransform:
   m_Children:
   - {fileID: 366090155}
   m_Father: {fileID: 621278113}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -12305,7 +12408,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1891431150}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 131486461}
+        m_TargetAssemblyTypeName: ControlsForColumn2, Assembly-CSharp
+        m_MethodName: GoToEnlargeSceneForColumn2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1891431150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12992,6 +13107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2047557984}
   - component: {fileID: 2047557986}
+  - component: {fileID: 2047557987}
   m_Layer: 5
   m_Name: ColorPanelForColumn2
   m_TagString: Untagged
@@ -13043,6 +13159,19 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &2047557987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047557983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d40139be9ff4b5b923f8f35166479d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Font: {fileID: 12800000, guid: 282648a4cd6434f1fb9fa153b7eab089, type: 3}
 --- !u!1 &2064506128
 GameObject:
   m_ObjectHideFlags: 0
@@ -13923,7 +14052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb656d0a238146fdac56684d0c65fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dotSprite: {fileID: 21300000, guid: a0e35f6b808bb7447826cc6c69ffe448, type: 3}
+  dotSprite: {fileID: 21300000, guid: 9150d7e95bbb6664f9003b200188f544, type: 3}
   Font: {fileID: 12800000, guid: 282648a4cd6434f1fb9fa153b7eab089, type: 3}
 --- !u!1 &2132755345
 GameObject:

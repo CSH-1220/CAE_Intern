@@ -32,10 +32,4 @@ public class SettingControls : MonoBehaviour
         Column1.SetActive(true);
         Column2.SetActive(true);
     }
-
-
-
-
-
-
 }

@@ -11,9 +11,6 @@ public class PreGamePage : MonoBehaviour
     private static float[] PageArray = new float[] { 0f, 0.125f, 0.25f, 0.375f, 0.5f, 0.625f, 0.75f, 0.875f, 1f }; //9頁
     private static float targetHorizontalPosition = 0;
     public float smoothing = 5;
-
-    //private bool isNext;
-    //private bool isLast;
     private static bool go = false;
 
     private string[] Title = new string[] { "Buckling Tutorial", "Create Your First Column!!", "Create Your Second Column!!", "Instruction" };
@@ -30,8 +27,6 @@ public class PreGamePage : MonoBehaviour
 
     void Update()
     {
-        //isNext = false;
-        //isLast = false;
 
         if (go == true)
         {
@@ -67,7 +62,6 @@ public class PreGamePage : MonoBehaviour
     }
     public void NextPage()
     {
-        //isNext = true;
         go = true;
         float PosX = scrollRect.horizontalNormalizedPosition;
         int index = 1;
@@ -91,7 +85,6 @@ public class PreGamePage : MonoBehaviour
         }
         else
         {
-            //isLast = true;
             go = true;
             float PosX = scrollRect.horizontalNormalizedPosition;
             int index = 1;
