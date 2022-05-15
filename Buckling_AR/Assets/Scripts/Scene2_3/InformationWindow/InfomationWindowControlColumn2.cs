@@ -10,7 +10,7 @@ public class InfomationWindowControlColumn2 : MonoBehaviour
     public GameObject Bracing2;
     private void Start()
     {
-        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex == 2)
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex == 3)
         {
             BoundaryCondition2.transform.GetChild(BoundaryConditionPage.Parameter2).gameObject.SetActive(true);
             Section2.transform.GetChild(SectionPage.Parameter2).gameObject.SetActive(true);

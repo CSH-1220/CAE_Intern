@@ -33,21 +33,21 @@ public class Graph_Force : MonoBehaviour
     //private GameObject tooltipGameObject;
 
 
-    private static List<float> valueList1 = new List<float> { 0 };
-    private static List<float> valueList2 = new List<float> { 0 };
+    public static List<float> valueList1 = new List<float> { 0 };
+    public static List<float> valueList2 = new List<float> { 0 };
 
     private readonly List<float> valueList0 = new List<float> { };
     private IGraphVisual graphVisual1;
     private IGraphVisual graphVisual2;
-    private static int maxVisibleValueAmount;
+    public static int maxVisibleValueAmount;
     private Func<int, string> getAxisLabelX;
     private Func<float, string> getAxisLabelY;
 
-    private static StreamReader file1;
-    private static StreamReader file2;
-    private static int file1Count;
-    private static int file2Count;
-    private int MaxFileCount;
+    public static StreamReader file1;
+    public static StreamReader file2;
+    public static int file1Count;
+    public static int file2Count;
+    public int MaxFileCount;
 
     private string[] valueString = new string[3];
 
@@ -102,7 +102,7 @@ public class Graph_Force : MonoBehaviour
     {
         if (Graph_Force.valueList2.Count <= Graph_Force.file2Count)
         {
-            Graph_Force.valueList2 = ChanegeValueList1();
+            Graph_Force.valueList2 = ChanegeValueList2();
         }
 
     }
@@ -165,7 +165,7 @@ public class Graph_Force : MonoBehaviour
         LoadGameObject2.GetComponent<Shadow>().effectDistance = new Vector2(1, -1);
 
     }
-    private static List<float> ChanegeValueList1()
+    public static List<float> ChanegeValueList1()
     {
         string valueLine1 = Graph_Force.file1.ReadLine();
 
@@ -178,7 +178,7 @@ public class Graph_Force : MonoBehaviour
         return Graph_Force.valueList1;
     }
 
-    private static List<float> ChanegeValueList2()
+    public static List<float> ChanegeValueList2()
     {
         string valueLine2 = Graph_Force.file2.ReadLine();
 

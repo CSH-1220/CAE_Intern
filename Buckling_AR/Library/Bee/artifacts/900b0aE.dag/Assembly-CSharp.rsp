@@ -418,6 +418,10 @@
 "Assets/Scripts/Scene1/InfomationWindowControl.cs"
 "Assets/Scripts/Scene1/SettingControls.cs"
 "Assets/Scripts/Scene1/StressMode.cs"
+"Assets/Scripts/Scene2_3/Graph_Displacement_Column1.cs"
+"Assets/Scripts/Scene2_3/Graph_Displacement_Column2.cs"
+"Assets/Scripts/Scene2_3/Graph_Force_Column1.cs"
+"Assets/Scripts/Scene2_3/Graph_Force_Column2.cs"
 "Assets/Scripts/Scene2_3/InformationWindow/InfomationWindowControlColumn1.cs"
 "Assets/Scripts/Scene2_3/InformationWindow/InfomationWindowControlColumn2.cs"
 "Assets/Scripts/Scene2_3/ScaleandRotateSlider.cs"
@@ -427,6 +431,9 @@
 "Assets/Scripts/Scene2_3/StressMode/StressModeForColumn2.cs"
 "Assets/Scripts/Scene4/MeasurementController.cs"
 "Assets/Scripts/Scene4/SettingControls4.cs"
+"Assets/Scripts/Scene5_6/OkCancelControls.cs"
+"Assets/Scripts/Scene5_6/SettingControls5.cs"
+"Assets/Scripts/Scene7/ImageTrackingMultiple.cs"
 -langversion:9.0
 
 /deterministic

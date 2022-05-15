@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{536EFD59-BE47-07A9-CE3C-5D7ED1C3D318}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Scene2_3/Settings/SettingControls3.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Scene2_3/Graph_Displacement_Column1.cs">
     <Files>
-      <File FileName="Assets/Scripts/Scene2_3/Settings/SettingControls3.cs" Line="33" Column="6" />
-      <File FileName="Assets/Scripts/Scene4/SettingControls4.cs" Line="16" Column="31" />
+      <File FileName="Assets/Scripts/Scene2_3/InformationWindow/InfomationWindowControlColumn2.cs" Line="13" Column="86" />
+      <File FileName="Assets/Scripts/Scene2_3/Graph_Displacement_Column1.cs" Line="199" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c74f187e-2136-4767-9103-374a224f8c34" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="db5a4d90-db92-4f91-bc5c-b6121a941fae" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

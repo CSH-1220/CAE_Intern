@@ -62,6 +62,7 @@
     <Compile Include="Assets/Scripts/Scene0/PageI_Question.cs" />
     <Compile Include="Assets/Scripts/Scene0/SortInfoForColumn12/BracingPage.cs" />
     <Compile Include="Assets/Scripts/Scene1/Column1/ControlsForColumn1.cs" />
+    <Compile Include="Assets/Scripts/Scene4/MeasurementController.cs" />
     <Compile Include="Assets/CodeMonkey/MonoBehaviours/CameraFollowSetup.cs" />
     <Compile Include="Assets/CodeMonkey/MonoBehaviours/CameraFollow.cs" />
     <Compile Include="Assets/CodeMonkey/Utils/World_Bar.cs" />
@@ -76,13 +77,18 @@
     <Compile Include="Assets/Scripts/Scene1/Graph/Graph_Displacement.cs" />
     <Compile Include="Assets/Scripts/Scene1/Column1/Column1.cs" />
     <Compile Include="Assets/Scripts/Scene0/SortInfoForColumn12/SectionPage.cs" />
+    <Compile Include="Assets/Scripts/Scene7/ImageTrackingMultiple.cs" />
     <Compile Include="Assets/Scripts/Scene2_3/Settings/SettingControls3.cs" />
     <Compile Include="Assets/Scripts/Scene0/Main/PreGamePage.cs" />
+    <Compile Include="Assets/Scripts/Scene2_3/Graph_Force_Column2.cs" />
     <Compile Include="Assets/Scripts/Scene0/SortInfoForColumn12/LengthPage.cs" />
+    <Compile Include="Assets/Scripts/Scene5_6/OkCancelControls.cs" />
     <Compile Include="Assets/Scripts/Scene1/Column2/ControlsForColumn2.cs" />
     <Compile Include="Assets/CodeMonkey/Utils/UI_Sprite.cs" />
+    <Compile Include="Assets/Scripts/Scene2_3/Graph_Force_Column1.cs" />
     <Compile Include="Assets/Scripts/Scene0/PageL_RelationshipControl.cs" />
     <Compile Include="Assets/Scripts/Scene2_3/StressMode/StressModeForColumn2.cs" />
+    <Compile Include="Assets/Scripts/Scene5_6/SettingControls5.cs" />
     <Compile Include="Assets/Fonts/Script/scriptTexttest.cs" />
     <Compile Include="Assets/CodeMonkey/Utils/UI_TextComplex.cs" />
     <Compile Include="Assets/Scripts/Scene0/PageK_LoadControl.cs" />
@@ -99,14 +105,15 @@
     <Compile Include="Assets/CodeMonkey/Utils/UI_Bar.cs" />
     <Compile Include="Assets/Scripts/Scene1/Graph/Graph_Force.cs" />
     <Compile Include="Assets/Scripts/Scene1/Column1/ColorPanelForColumn1.cs" />
+    <Compile Include="Assets/Scripts/Scene4/SettingControls4.cs" />
     <Compile Include="Assets/CodeMonkey/MonoBehaviours/ComponentActions.cs" />
     <Compile Include="Assets/CodeMonkey/Utils/UI_BarMultiple.cs" />
     <Compile Include="Assets/Scripts/Scene0/Main/CheckTurnPageButton.cs" />
     <Compile Include="Assets/CodeMonkey/CMDebug.cs" />
     <Compile Include="Assets/CodeMonkey/Utils/FunctionPeriodic.cs" />
     <Compile Include="Assets/Scripts/GameManager.cs" />
-    <Compile Include="Assets/Scripts/Scene4/MeasurementController.cs" />
-    <Compile Include="Assets/Scripts/Scene4/SettingControls4.cs" />
+    <Compile Include="Assets/Scripts/Scene2_3/Graph_Displacement_Column1.cs" />
+    <Compile Include="Assets/Scripts/Scene2_3/Graph_Displacement_Column2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Resources/ColumnData/BoundaryCondition2/Section1/Length1/Bracing1/Displacement/46.txt" />

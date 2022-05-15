@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: MutipleImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 4882989705423435744
+  m_GuidHigh: 1664860067729275836
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 4676478684972034848
+      m_GuidHigh: 723678479449024922
+    m_SerializedTextureGuid:
+      m_GuidLow: 16494549872033265981
+      m_GuidHigh: 4062339647873300058
+    m_Size: {x: 0.1, y: 0.13293414}
+    m_SpecifySize: 1
+    m_Name: ArRed
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5112463545277548493
+      m_GuidHigh: 3036919385422363026
+    m_SerializedTextureGuid:
+      m_GuidLow: 8368512446708705123
+      m_GuidHigh: 6681766364333389480
+    m_Size: {x: 0.1, y: 0.15128206}
+    m_SpecifySize: 1
+    m_Name: ArPurple
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5330183959818529607
+      m_GuidHigh: 5743807835920357555
+    m_SerializedTextureGuid:
+      m_GuidLow: 16450079558064093226
+      m_GuidHigh: 17661166087380271752
+    m_Size: {x: 0.1, y: 0.1}
+    m_SpecifySize: 1
+    m_Name: ArYellow
+    m_Texture: {fileID: 0}

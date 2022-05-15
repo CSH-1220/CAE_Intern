@@ -24,8 +24,8 @@ public class Graph_Displacement : MonoBehaviour
 
     string dataLocation = PreGamePage.dataLocation;
 
-    static int index1 = Column1.index;
-    static int index2 = Column2.index;
+    public static int index1 = Column1.index;
+    public static int index2 = Column2.index;
 
     public Font Font;
     private static Graph_Displacement instance;
@@ -37,17 +37,17 @@ public class Graph_Displacement : MonoBehaviour
     private GameObject tooltipGameObject;
 
 
-    private static List<float> valueList1 = new List<float> { 0 };
-    private static List<float> valueList2 = new List<float> { 0 };
+    public static List<float> valueList1 = new List<float> { 0 };
+    public static List<float> valueList2 = new List<float> { 0 };
 
     private IGraphVisual graphVisual1;
     private IGraphVisual graphVisual2;
-    private static int maxVisibleValueAmount;
+    public static int maxVisibleValueAmount;
     private Func<float, string> getAxisLabelX;
     private Func<int, string> getAxisLabelY;
 
-    private static StreamReader file1;
-    private static StreamReader file2;
+    public static StreamReader file1;
+    public static StreamReader file2;
     private string[] valueString = new string[3];
     private static int fileCount1;
     private static int fileCount2;
