@@ -46,8 +46,8 @@ public class Graph_Displacement : MonoBehaviour
     private Func<float, string> getAxisLabelX;
     private Func<int, string> getAxisLabelY;
 
-    public static StreamReader file1;
-    public static StreamReader file2;
+    public static string file1;
+    public static string file2;
     private string[] valueString = new string[3];
     private static int fileCount1;
     private static int fileCount2;
@@ -68,11 +68,6 @@ public class Graph_Displacement : MonoBehaviour
         gameObjectsList = new List<GameObject>();
         tooltipGameObject = graphContainer.Find("tooltip").gameObject;
 
-        string pathOfFile1 = dataLocation + @"/BoundaryCondition" + boundarycondition1 + @"/Section" + section1 + @"/Length" + length1 + @"/Bracing" + bracing1 + @"/Displacement/" + Graph_Displacement.index1 + ".txt"; ;
-        string pathOfFile2 = dataLocation + @"/BoundaryCondition" + boundarycondition2 + @"/Section" + section2 + @"/Length" + length2 + @"/Bracing" + bracing2 + @"/Displacement/" + Graph_Displacement.index2 + ".txt"; ;
-        file1 = new StreamReader(pathOfFile1, Encoding.Default);
-        file2 = new StreamReader(pathOfFile2, Encoding.Default);
-
         Graph_Displacement.valueList1 = ChanegeValueList1(Graph_Displacement.index1);
         Graph_Displacement.valueList2 = ChanegeValueList2(Graph_Displacement.index2);
 
@@ -88,7 +83,6 @@ public class Graph_Displacement : MonoBehaviour
         graphVisual2 = new LineGraphVisual(graphContainer, dotSprite, Color.red, new Color(1, 0, 0, 1));
 
         ShowGraph(Graph_Displacement.valueList1, Graph_Displacement.valueList2, this.graphVisual1, this.graphVisual2, -1, (float _i) => Mathf.RoundToInt(_i) + "", (int _i) => _i.ToString());
-
         ChangeMaxDisplacement();
     }
 
@@ -126,29 +120,30 @@ public class Graph_Displacement : MonoBehaviour
 
     private void FileCount()
     {
-        DirectoryInfo File1 = new DirectoryInfo(dataLocation + @"/BoundaryCondition" + boundarycondition1 + @"/Section" + section1 + @"/Length" + length1 + @"/Bracing" + bracing1 + @"/Displacement");
-        FileInfo[] files1 = File1.GetFiles("*.txt");
-        fileCount1 = files1.Length - 1;
+        var textFile1 = Resources.Load<TextAsset>(@"ColumnData/BoundaryCondition" + boundarycondition1 + @"/Section" + section1 + @"/Length" + length1 + @"/Bracing" + bracing1 + @"/Displacement/" + index1);
+        file1 = textFile1.text;
+        fileCount1 = file1.Split('\n').Length;
+        var textFile2 = Resources.Load<TextAsset>(@"ColumnData/BoundaryCondition" + boundarycondition2 + @"/Section" + section2 + @"/Length" + length2 + @"/Bracing" + bracing2 + @"/Displacement/" + index2);
+        file2 = textFile2.text;
+        fileCount2 = file2.Split('\n').Length;
 
-        DirectoryInfo File2 = new DirectoryInfo(dataLocation + @"/BoundaryCondition" + boundarycondition2 + @"/Section" + section2 + @"/Length" + length2 + @"/Bracing" + bracing2 + @"/Displacement");
-        FileInfo[] files2 = File2.GetFiles("*.txt");
-        fileCount2 = files2.Length - 1;
     }
     private static List<float> ChanegeValueList1(int index)
     {
         Graph_Displacement.valueList1.Clear();
         CultureInfo providers = new CultureInfo("en-US");
         NumberStyles styles = NumberStyles.Float;
-        string pathOfFile = PreGamePage.dataLocation + @"/BoundaryCondition" + boundarycondition1 + @"/Section" + section1 + @"/Length" + length1 + @"/Bracing" + bracing1 + @"/Displacement/" + index + ".txt"; ;
-        Graph_Displacement.file1 = new StreamReader(pathOfFile, Encoding.Default);
-        string valueLine = Graph_Displacement.file1.ReadLine();
 
+        var textFile1 = Resources.Load<TextAsset>(@"ColumnData/BoundaryCondition" + boundarycondition1 + @"/Section" + section1 + @"/Length" + length1 + @"/Bracing" + bracing1 + @"/Displacement/" + index);
+        file1 = textFile1.text;
+        string[] forceResultantList = file1.Split('\n');
+        int i = 0;
+        string valueLine = forceResultantList[i];
         while (valueLine != null)
         {
             float value = Single.Parse(valueLine, styles, providers);
             Graph_Displacement.valueList1.Add(value);
-
-            valueLine = Graph_Displacement.file1.ReadLine();
+            i++;
         }
 
         Graph_Displacement.maxVisibleValueAmount = Graph_Displacement.valueList1.Count + Graph_Displacement.valueList2.Count;
@@ -161,18 +156,17 @@ public class Graph_Displacement : MonoBehaviour
         Graph_Displacement.valueList2.Clear();
         CultureInfo providers = new CultureInfo("en-US");
         NumberStyles styles = NumberStyles.Float;
-        string pathOfFile = PreGamePage.dataLocation + @"/BoundaryCondition" + boundarycondition2 + @"/Section" + section2 + @"/Length" + length2 + @"/Bracing" + bracing2 + @"/Displacement/" + index + ".txt"; ;
-        file2 = new StreamReader(pathOfFile, Encoding.Default);
-        string valueLine = file2.ReadLine();
-
+        var textFile2 = Resources.Load<TextAsset>(@"ColumnData/BoundaryCondition" + boundarycondition2 + @"/Section" + section2 + @"/Length" + length2 + @"/Bracing" + bracing2 + @"/Displacement/" + index);
+        file2 = textFile2.text;
+        string[] forceResultantList = file2.Split('\n');
+        int i = 0;
+        string valueLine = forceResultantList[i];
         while (valueLine != null)
         {
             float value = Single.Parse(valueLine, styles, providers);
             Graph_Displacement.valueList2.Add(value);
-
-            valueLine = file2.ReadLine();
+            i++;
         }
-
         Graph_Displacement.maxVisibleValueAmount = Graph_Displacement.valueList1.Count + Graph_Displacement.valueList2.Count;
         Graph_Displacement.valueList2.Reverse();
         return Graph_Displacement.valueList2;

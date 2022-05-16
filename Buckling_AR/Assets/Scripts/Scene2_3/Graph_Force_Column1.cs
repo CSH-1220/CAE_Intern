@@ -96,21 +96,6 @@ public class Graph_Force_Column1 : MonoBehaviour
         LoadGameObject1.GetComponent<Shadow>().effectDistance = new Vector2(1, -1);
 
     }
-    private static List<float> ChanegeValueList1()
-    {
-        string valueLine1 = Graph_Force.file1.ReadLine();
-
-        float value1 = float.Parse(valueLine1) / 1000;
-
-        Graph_Force.valueList1.Add(value1);
-
-        Graph_Force.maxVisibleValueAmount = Graph_Force.valueList1.Count;
-
-        return Graph_Force.valueList1;
-    }
-
-
-
     public void ShowCurrentLoad()
     {
         LoadGameObject1.GetComponent<Text>().text = "Load : " + "\n" + Graph_Force.valueList1[Graph_Force.valueList1.Count - 1] + " kN";

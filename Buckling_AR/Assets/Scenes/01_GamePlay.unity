@@ -1664,7 +1664,8 @@ GameObject:
   - component: {fileID: 172468217}
   - component: {fileID: 172468216}
   - component: {fileID: 172468215}
-  - component: {fileID: 172468214}
+  - component: {fileID: 172468219}
+  - component: {fileID: 172468220}
   m_Layer: 0
   m_Name: Column1
   m_TagString: Untagged
@@ -1672,18 +1673,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &172468214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172468213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dbbd03b25ae44805bbef5ad494585a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &172468215
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1749,6 +1738,42 @@ Transform:
   m_Father: {fileID: 1476266785}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &172468219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172468213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eda371e5375f454490a86f21559ee38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Use:
+    Filter: 0
+    IgnoreStartedOverGui: 1
+    RequiredFingerCount: 0
+    RequiredMouseButtons: 0
+    RequiredSelectable: {fileID: 0}
+  _camera: {fileID: 0}
+  sensitivity: 1
+  damping: -1
+  inertia: 0
+  remainingTranslation: {x: 0, y: 0, z: 0}
+--- !u!114 &172468220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172468213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ee00339d6d34846ae434c253129390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fold: 1
 --- !u!1 &176452266
 GameObject:
   m_ObjectHideFlags: 0
@@ -14291,6 +14316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dotSprite: {fileID: 21300000, guid: 9150d7e95bbb6664f9003b200188f544, type: 3}
+  MaxFileCount: 0
   Font: {fileID: 12800000, guid: 282648a4cd6434f1fb9fa153b7eab089, type: 3}
 --- !u!1 &2132755345
 GameObject:

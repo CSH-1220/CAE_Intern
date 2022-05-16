@@ -57,14 +57,10 @@ public class Graph_Displacement_Column1 : MonoBehaviour
         gameObjectsList = new List<GameObject>();
         tooltipGameObject = graphContainer.Find("tooltip").gameObject;
 
-        string pathOfFile1 = dataLocation + @"/BoundaryCondition" + boundarycondition1 + @"/Section" + section1 + @"/Length" + length1 + @"/Bracing" + bracing1 + @"/Displacement/" + Graph_Displacement.index1 + ".txt"; ;
-        file1 = new StreamReader(pathOfFile1, Encoding.Default);
-        Graph_Displacement.valueList1 = ChanegeValueList1(Graph_Displacement.index1);
         FileCount();
         ShowMaxDisplacement();
 
     }
-
 
     void Update()
     {
@@ -78,27 +74,6 @@ public class Graph_Displacement_Column1 : MonoBehaviour
         DirectoryInfo File1 = new DirectoryInfo(dataLocation + @"/BoundaryCondition" + boundarycondition1 + @"/Section" + section1 + @"/Length" + length1 + @"/Bracing" + bracing1 + @"/Displacement");
         FileInfo[] files1 = File1.GetFiles("*.txt");
         fileCount1 = files1.Length - 1;
-    }
-    private static List<float> ChanegeValueList1(int index)
-    {
-        Graph_Displacement.valueList1.Clear();
-        CultureInfo providers = new CultureInfo("en-US");
-        NumberStyles styles = NumberStyles.Float;
-        string pathOfFile = PreGamePage.dataLocation + @"/BoundaryCondition" + boundarycondition1 + @"/Section" + section1 + @"/Length" + length1 + @"/Bracing" + bracing1 + @"/Displacement/" + index + ".txt"; ;
-        Graph_Displacement.file1 = new StreamReader(pathOfFile, Encoding.Default);
-        string valueLine = Graph_Displacement.file1.ReadLine();
-
-        while (valueLine != null)
-        {
-            float value = Single.Parse(valueLine, styles, providers);
-            Graph_Displacement.valueList1.Add(value);
-
-            valueLine = Graph_Displacement.file1.ReadLine();
-        }
-
-        Graph_Displacement.maxVisibleValueAmount = Graph_Displacement.valueList1.Count + Graph_Displacement.valueList2.Count;
-        Graph_Displacement.valueList1.Reverse();
-        return Graph_Displacement.valueList1;
     }
     public void ShowMaxDisplacement()
     {

@@ -8021,10 +8021,10 @@ GameObject:
   - component: {fileID: 1993701934}
   - component: {fileID: 1993701938}
   - component: {fileID: 1993701937}
-  - component: {fileID: 1993701936}
   - component: {fileID: 1993701935}
   - component: {fileID: 1993701940}
   - component: {fileID: 1993701939}
+  - component: {fileID: 1993701941}
   m_Layer: 0
   m_Name: Column1
   m_TagString: Untagged
@@ -8063,18 +8063,6 @@ MonoBehaviour:
   scaleMaxValue: 0.5
   rotateMinValue: 0
   rotateMaxValue: 360
---- !u!114 &1993701936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1993701933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dbbd03b25ae44805bbef5ad494585a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1993701937
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8171,6 +8159,19 @@ MonoBehaviour:
   damping: -1
   inertia: 0
   remainingTranslation: {x: 0, y: 0, z: 0}
+--- !u!114 &1993701941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993701933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ee00339d6d34846ae434c253129390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fold: 1
 --- !u!1 &2002856393
 GameObject:
   m_ObjectHideFlags: 0

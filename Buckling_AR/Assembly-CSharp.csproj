@@ -75,9 +75,9 @@
     <Compile Include="Assets/CodeMonkey/Utils/FunctionTimer.cs" />
     <Compile Include="Assets/Scripts/Scene2_3/InformationWindow/InfomationWindowControlColumn1.cs" />
     <Compile Include="Assets/Scripts/Scene1/Graph/Graph_Displacement.cs" />
-    <Compile Include="Assets/Scripts/Scene1/Column1/Column1.cs" />
     <Compile Include="Assets/Scripts/Scene0/SortInfoForColumn12/SectionPage.cs" />
     <Compile Include="Assets/Scripts/Scene7/ImageTrackingMultiple.cs" />
+    <Compile Include="Assets/Scripts/Scene2_3/Graph_Displacement_Column1.cs" />
     <Compile Include="Assets/Scripts/Scene2_3/Settings/SettingControls3.cs" />
     <Compile Include="Assets/Scripts/Scene0/Main/PreGamePage.cs" />
     <Compile Include="Assets/Scripts/Scene2_3/Graph_Force_Column2.cs" />
@@ -95,6 +95,7 @@
     <Compile Include="Assets/CodeMonkey/Utils/Button_Sprite.cs" />
     <Compile Include="Assets/Scripts/Scene1/Column2/ColorPanelForColumn2.cs" />
     <Compile Include="Assets/CodeMonkey/Assets.cs" />
+    <Compile Include="Assets/Scripts/Scene2_3/Graph_Displacement_Column2.cs" />
     <Compile Include="Assets/CodeMonkey/Utils/World_Sprite.cs" />
     <Compile Include="Assets/CodeMonkey/Utils/UtilsClass.cs" />
     <Compile Include="Assets/Scripts/Scene1/Column2/Column2.cs" />
@@ -112,8 +113,7 @@
     <Compile Include="Assets/CodeMonkey/CMDebug.cs" />
     <Compile Include="Assets/CodeMonkey/Utils/FunctionPeriodic.cs" />
     <Compile Include="Assets/Scripts/GameManager.cs" />
-    <Compile Include="Assets/Scripts/Scene2_3/Graph_Displacement_Column1.cs" />
-    <Compile Include="Assets/Scripts/Scene2_3/Graph_Displacement_Column2.cs" />
+    <Compile Include="Assets/Scripts/Scene1/Column1/Column1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Resources/ColumnData/BoundaryCondition2/Section1/Length1/Bracing1/Displacement/46.txt" />

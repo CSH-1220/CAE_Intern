@@ -29,9 +29,6 @@ public class Graph_Force : MonoBehaviour
     private RectTransform labelTemplateX;
     private RectTransform labelTemplateY;
     private List<GameObject> gameObjectsList;
-    //private List<GameObject> gameObjectsList2;
-    //private GameObject tooltipGameObject;
-
 
     public static List<float> valueList1 = new List<float> { 0 };
     public static List<float> valueList2 = new List<float> { 0 };
@@ -43,8 +40,11 @@ public class Graph_Force : MonoBehaviour
     private Func<int, string> getAxisLabelX;
     private Func<float, string> getAxisLabelY;
 
-    public static StreamReader file1;
-    public static StreamReader file2;
+    static public int index1 = 0;
+    static public int index2 = 0;
+
+    public static string file1;
+    public static string file2;
     public static int file1Count;
     public static int file2Count;
     public int MaxFileCount;
@@ -63,18 +63,14 @@ public class Graph_Force : MonoBehaviour
         labelTemplateX = graphContainer.Find("labelTemplateX").GetComponent<RectTransform>();
         labelTemplateY = graphContainer.Find("labelTemplateY").GetComponent<RectTransform>();
         gameObjectsList = new List<GameObject>();
-        string pathOfFile1 = dataLocation + @"/BoundaryCondition" + boundarycondition1 + @"/Section" + section1 + @"/Length" + length1 + @"/Bracing" + bracing1 + @"/forceresultant.txt"; ;
-        string pathOfFile2 = dataLocation + @"/BoundaryCondition" + boundarycondition2 + @"/Section" + section2 + @"/Length" + length2 + @"/Bracing" + bracing2 + @"/forceresultant.txt"; ;
-        file1 = new StreamReader(pathOfFile1, Encoding.Default);
-        file2 = new StreamReader(pathOfFile2, Encoding.Default);
 
-        file1Count = IndexCount(file1);
-        file2Count = IndexCount(file2);
+        var textFile1 = Resources.Load<TextAsset>(@"ColumnData/BoundaryCondition" + boundarycondition1 + @"/Section" + section1 + @"/Length" + length1 + @"/Bracing" + bracing1 + @"/forceresultant");
+        file1 = textFile1.text;
+        file1Count = file1.Split('\n').Length;
+        var textFile2 = Resources.Load<TextAsset>(@"ColumnData/BoundaryCondition" + boundarycondition2 + @"/Section" + section2 + @"/Length" + length2 + @"/Bracing" + bracing2 + @"/forceresultant");
+        file2 = textFile2.text;
+        file2Count = file2.Split('\n').Length;
         MaxFileCount = Mathf.Max(file1Count, file2Count);
-
-        file1 = new StreamReader(pathOfFile1, Encoding.Default);
-        file2 = new StreamReader(pathOfFile2, Encoding.Default);
-
         LoadValueSetting();
     }
 
@@ -92,9 +88,11 @@ public class Graph_Force : MonoBehaviour
     }
     public static void Column1Load()
     {
+
         if (Graph_Force.valueList1.Count <= Graph_Force.file1Count)
         {
-            Graph_Force.valueList1 = Graph_Force.ChanegeValueList1();
+            Graph_Force.index1++;
+            Graph_Force.valueList1 = Graph_Force.ChanegeValueList1(index1);
         }
 
     }
@@ -102,38 +100,25 @@ public class Graph_Force : MonoBehaviour
     {
         if (Graph_Force.valueList2.Count <= Graph_Force.file2Count)
         {
-            Graph_Force.valueList2 = ChanegeValueList2();
+            Graph_Force.index2++;
+            Graph_Force.valueList2 = ChanegeValueList2(index2);
         }
 
     }
     public static void Column1Renew()
     {
-        Graph_Force.valueList1 = new List<float> { 0 };
-        string pathOfFile1 = PreGamePage.dataLocation + @"/BoundaryCondition" + boundarycondition1 + @"/Section" + section1 + @"/Length" + length1 + @"/Bracing" + bracing1 + @"/forceresultant.txt";
-        file1 = new StreamReader(pathOfFile1, Encoding.Default);
+        Graph_Force.valueList1.Clear();
+        index1 = 0;
+        Graph_Force.valueList1 = Graph_Force.ChanegeValueList1(index1);
     }
 
     public static void Column2Renew()
     {
-        Graph_Force.valueList2 = new List<float> { 0 };
-        string pathOfFile2 = PreGamePage.dataLocation + @"/BoundaryCondition" + boundarycondition2 + @"/Section" + section2 + @"/Length" + length2 + @"/Bracing" + bracing2 + @"/forceresultant.txt";
-        file2 = new StreamReader(pathOfFile2, Encoding.Default);
+        Graph_Force.valueList2.Clear();
+        index2 = 0;
+        Graph_Force.valueList2 = Graph_Force.ChanegeValueList2(index2);
     }
 
-    private int IndexCount(StreamReader file)
-    {
-        int LinesCount = 0;
-
-        string Line = file.ReadLine();
-        while (Line != null)
-        {
-            LinesCount++;
-            Line = file.ReadLine();
-        }
-
-        return LinesCount;
-
-    }
     private void LoadValueSetting()
     {
         LoadGameObject1 = new GameObject("Load", typeof(Text), typeof(Shadow));
@@ -165,29 +150,24 @@ public class Graph_Force : MonoBehaviour
         LoadGameObject2.GetComponent<Shadow>().effectDistance = new Vector2(1, -1);
 
     }
-    public static List<float> ChanegeValueList1()
+
+    public static List<float> ChanegeValueList1(int index)
     {
-        string valueLine1 = Graph_Force.file1.ReadLine();
-
+        string[] forceResultantList = file1.Split('\n');
+        string valueLine1 = forceResultantList[index];
         float value1 = float.Parse(valueLine1) / 1000;
-
         Graph_Force.valueList1.Add(value1);
-
         Graph_Force.maxVisibleValueAmount = Graph_Force.valueList1.Count + Graph_Force.valueList2.Count;
-
         return Graph_Force.valueList1;
     }
 
-    public static List<float> ChanegeValueList2()
+    public static List<float> ChanegeValueList2(int index)
     {
-        string valueLine2 = Graph_Force.file2.ReadLine();
-
+        string[] forceResultantList = file2.Split('\n');
+        string valueLine2 = forceResultantList[index];
         float value2 = float.Parse(valueLine2) / 1000;
-
         Graph_Force.valueList2.Add(value2);
-
         Graph_Force.maxVisibleValueAmount = Graph_Force.valueList1.Count + Graph_Force.valueList2.Count;
-
         return Graph_Force.valueList2;
     }
 
