@@ -2665,7 +2665,7 @@ Camera:
   serializedVersion: 2
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
-  m_projectionMatrixMode: 1
+  m_projectionMatrixMode: 2
   m_GateFitMode: 2
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
@@ -2679,7 +2679,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 20
-  field of view: 60
+  field of view: 26.991467
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -2748,7 +2748,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 445687200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 621, y: 1344, z: -2140}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3791,10 +3791,10 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 0
+      - m_Target: {fileID: 857466962}
+        m_TargetAssemblyTypeName: StressModeForColumn2, Assembly-CSharp
+        m_MethodName: StressModeColumn2
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4987,7 +4987,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccaf781c218c04e1bb5e13284153910e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NormalMaterialForColumn2: {fileID: 0}
+  NormalMaterialForColumn2: {fileID: 2100000, guid: e0276ec6c780c4b16bbbe018d970ad89, type: 2}
   StressMaterial: {fileID: 2100000, guid: c4dab12b6ad08384ba8a3ce2f7eba5f7, type: 2}
   Column2: {fileID: 1089028124}
   ColorPanel2: {fileID: 620508072}
@@ -5654,10 +5654,10 @@ GameObject:
   - component: {fileID: 1089028125}
   - component: {fileID: 1089028131}
   - component: {fileID: 1089028130}
-  - component: {fileID: 1089028129}
   - component: {fileID: 1089028128}
   - component: {fileID: 1089028127}
   - component: {fileID: 1089028126}
+  - component: {fileID: 1089028132}
   m_Layer: 0
   m_Name: Column2
   m_TagString: Untagged
@@ -5742,18 +5742,6 @@ MonoBehaviour:
   scaleMaxValue: 0.5
   rotateMinValue: 0
   rotateMaxValue: 360
---- !u!114 &1089028129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1089028124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b7f82ed90ea4444a99a09e6d21885eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1089028130
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5804,6 +5792,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1089028124}
   m_Mesh: {fileID: 0}
+--- !u!114 &1089028132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089028124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b7f82ed90ea4444a99a09e6d21885eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fold: 1
 --- !u!1 &1121934164
 GameObject:
   m_ObjectHideFlags: 0
@@ -6034,6 +6035,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190583177}
   m_CullTransparentMesh: 1
+--- !u!1 &1205610144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1205610146}
+  - component: {fileID: 1205610145}
+  m_Layer: 0
+  m_Name: LeanTouch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1205610145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205610144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc98219a83dff145947365dc914d06e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tapThreshold: 0.2
+  swipeThreshold: 100
+  referenceDpi: 200
+  guiLayers:
+    serializedVersion: 2
+    m_Bits: 32
+  useTouch: 1
+  useHover: 1
+  useMouse: 1
+  useSimulator: 1
+  disableMouseEmulation: 1
+  recordFingers: 1
+  recordThreshold: 5
+  recordLimit: 10
+--- !u!4 &1205610146
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205610144}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1259886414
 GameObject:
   m_ObjectHideFlags: 0
@@ -6305,9 +6364,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205558eac14c642d98eead052befdf06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Column2: {fileID: 77333572}
+  Column2_Info: {fileID: 77333572}
   Info: {fileID: 771646516}
   CloseInfoButton: {fileID: 599644662}
+  Column2: {fileID: 1089028124}
 --- !u!1 &1307667574
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,28 +7,35 @@ using System.IO;
 using System.Text;
 using UnityEngine;
 
-
-
-
+//when running 
+//press R to reset
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
 
 public class Column2 : MonoBehaviour
 {
-    public static int boundarycondition = BoundaryConditionPage.Parameter2;
-    public static int section = SectionPage.Parameter2;
-    public static int length = LengthPage.Parameter2;
-    public static int bracing = BracingPage.Parameter2;
+    public int fold = 1;
 
+    //public static int boundarycondition = BoundaryConditionPage.Parameter2;
+    //public static int section = SectionPage.Parameter2;
+    //public static int length = LengthPage.Parameter2;
+    //public static int bracing = BracingPage.Parameter2;
+
+    public static int boundarycondition = 2;
+    public static int section = 2;
+    public static int length = 2;
+    public static int bracing = 1;
+
+    //string filePath; 
     static public int index = 1;
-    public static string dataLocation = PreGamePage.dataLocation;
 
-    public static string dataConnectivity = dataLocation + @"/BoundaryCondition" + boundarycondition + @"/Section" + section + @"/Length" + length + @"/Bracing" + bracing + @"/" + @"/connectivity.txt";
-    public static string dataOriginal = dataLocation + @"/BoundaryCondition" + boundarycondition + @"/Section" + section + @"/Length" + length + @"/Bracing" + bracing + @"/1.txt";
-    public static int elementNumber = CalculateLine(dataConnectivity);
-    public static int pointNumber = CalculateLine(dataOriginal);
+    public static string dataConnectivity;
+    public static string dataOriginal;
+    public static int elementNumber;
+    public static int pointNumber;
+
     float[] stressArray; // #element
-    public static float[] pointStressArray = new float[pointNumber]; //#points
-    private static int fileCount;
+    public static float[] pointStressArray; //#points
+    public static int fileCount = 1;
 
 
     static public float color1_Bottom;
@@ -72,19 +79,32 @@ public class Column2 : MonoBehaviour
 
     public void Start()
     {
+
+        var textFile = Resources.Load<TextAsset>(@"ColumnData/BoundaryCondition" + boundarycondition + @"/Section" + section + @"/Length" + length + @"/Bracing" + bracing + @"/Connectivity");
+        dataConnectivity = textFile.text;
+        elementNumber = dataConnectivity.Split('\n').Length;
+
+        textFile = Resources.Load<TextAsset>(@"ColumnData/BoundaryCondition" + boundarycondition + @"/Section" + section + @"/Length" + length + @"/Bracing" + bracing + @"/1");
+        dataOriginal = textFile.text;
+        pointNumber = dataOriginal.Split('\n').Length;
+        pointStressArray = new float[pointNumber];
+
+        var temppp = Resources.Load<TextAsset>(@"ColumnData/BoundaryCondition" + boundarycondition + @"/Section" + section + @"/Length" + length + @"/Bracing" + bracing + @"/1");
+        for (; Resources.Load<TextAsset>(@"ColumnData/BoundaryCondition" + boundarycondition + @"/Section" + section + @"/Length" + length + @"/Bracing" + bracing + @"/" + fileCount) == true; fileCount++)
+        {
+            temppp = Resources.Load<TextAsset>(@"ColumnData/BoundaryCondition" + boundarycondition + @"/Section" + section + @"/Length" + length + @"/Bracing" + bracing + @"/" + fileCount);
+        }
+        fileCount--;
         mesh = GetComponent<MeshFilter>().mesh;
-        DirectoryInfo File = new DirectoryInfo(dataLocation + @"/BoundaryCondition" + boundarycondition + @"/Section" + section + @"/Length" + length + @"/Bracing" + bracing);
-        FileInfo[] files = File.GetFiles("*.txt");
-        fileCount = files.Length - 2; 
 
         CreateElementStressArray(1);
         CreateTriangle(boundarycondition, section, length, bracing);
         MeshData(boundarycondition, section, length, bracing, index);
-    }
 
+
+    }
     public void Update()
     {
-
         CreateElementStressArray(index);
         CreatePointStressArray();
 
@@ -95,7 +115,7 @@ public class Column2 : MonoBehaviour
 
     public static void Renew()
     {
-        Column2.index = 1;
+        index = 1;
     }
 
     public static void Load()
@@ -105,24 +125,23 @@ public class Column2 : MonoBehaviour
             Column2.index++;
         }
     }
-
     void CreateTriangle(int boundarycondition, int section, int length, int bracing)
     {
-        StreamReader streamreaderConnectivity = new StreamReader(dataConnectivity, Encoding.Default);
-        string String1 = streamreaderConnectivity.ReadLine();
+        string[] d = dataConnectivity.Split('\n');
+        int line = 0;
+        string String1 = d[line];
+
         string[] StringArray = new string[8];
         triangles = new List<int>();
         int elementNum = 0;
-
-        while (String1 != null)
+        while (line < elementNumber - 1)
         {
-            StringArray = String1.Split(',');
 
+            StringArray = String1.Split(',');
             for (int k = 0; k < StringArray.Length; k++)
             {
                 pointStressArray[Convert.ToInt32(StringArray[k]) - 1] = stressArray[elementNum];
             }
-
 
             int[][] faceTriangles =
             {
@@ -133,6 +152,7 @@ public class Column2 : MonoBehaviour
                 new int[]{Convert.ToInt32(StringArray[7]) - 1, Convert.ToInt32(StringArray[6]) - 1, Convert.ToInt32(StringArray[5]) - 1, Convert.ToInt32(StringArray[4]) - 1},
                 new int[]{Convert.ToInt32(StringArray[0]) - 1, Convert.ToInt32(StringArray[1]) - 1, Convert.ToInt32(StringArray[2]) - 1, Convert.ToInt32(StringArray[3]) - 1},
             };
+
             for (int i = 0; i < 6; i++)
             {
                 triangles.Add(faceTriangles[i][0]);
@@ -142,26 +162,24 @@ public class Column2 : MonoBehaviour
                 triangles.Add(faceTriangles[i][2]);
                 triangles.Add(faceTriangles[i][3]);
             }
-            String1 = streamreaderConnectivity.ReadLine();
+            line++;
+            String1 = d[line];
             elementNum++;
+
         }
-        streamreaderConnectivity.Close();
     }
-
-
-
     void MeshData(int boundarycondition, int section, int length, int bracing, int index)
     {
-        var data = dataLocation + @"/BoundaryCondition" + boundarycondition + @"/Section" + section + @"/Length" + length + @"/Bracing" + bracing + @"/" + index + @".txt";
+        var textFile = Resources.Load<TextAsset>(@"ColumnData/BoundaryCondition" + boundarycondition + @"/Section" + section + @"/Length" + length + @"/Bracing" + bracing + @"/" + index);
+        string[] d = textFile.text.Split('\n');
+        int line = 0;
+        string eachLine = d[line];
 
-        StreamReader streamReader = new StreamReader(data, Encoding.Default);
-
-        string eachLine = streamReader.ReadLine();
         string[] StringArray = new string[3];
         vertices = new List<Vector3>();
 
         int k = 0;
-        while (eachLine != null)
+        while (line < d.Length - 1)
         {
             StringArray = eachLine.Split(',');
 
@@ -172,11 +190,11 @@ public class Column2 : MonoBehaviour
             float b = Single.Parse(StringArray[1], styles, providers);
             float c = Single.Parse(StringArray[2], styles, providers);
             vertices.Add(new Vector3(a, c, b));
-
             k++;
-            eachLine = streamReader.ReadLine();
+            line++;
+            eachLine = d[line];
         }
-        streamReader.Close();
+
 
     }
     void CreateMesh()
@@ -189,54 +207,41 @@ public class Column2 : MonoBehaviour
         mesh.RecalculateNormals();
         mesh.RecalculateBounds();
     }
-    public static int CalculateLine(string path)
-    {
-        Stopwatch stopwatch = new Stopwatch();
-        StreamReader LineCount = new StreamReader(path, Encoding.Default);
 
-        int Lines = 0;
-        stopwatch.Restart();
-        using (LineCount)
-        {
-            var lines = "";
-            while ((lines = LineCount.ReadLine()) != null)
-            {
-                Lines++;
-            }
-        }
-        stopwatch.Stop();
-
-        return Lines;
-    }
 
     void CreateElementStressArray(int elementIndex)
     {
-        int elementNumberTotal = CalculateLine(dataConnectivity); //3600
+        int elementNumberTotal = elementNumber; //3600
         stressArray = new float[elementNumberTotal];
 
+        var textFile = Resources.Load<TextAsset>(@"ColumnData/BoundaryCondition" + boundarycondition + @"/Section" + section + @"/Length" + length + @"/Bracing" + bracing + @"/Zstress/" + elementIndex);
+        string[] d = textFile.text.Split('\n');
+        int line = 0;
+        string StressLine = d[line];
 
-        var data = dataLocation + @"/BoundaryCondition" + boundarycondition + @"/Section" + section + @"/Length" + length + @"/Bracing" + bracing + @"/Zstress/" + elementIndex + @".txt";
-        StreamReader stressLine = new StreamReader(data, Encoding.Default);
-        string StressLine = stressLine.ReadLine();
 
         for (int i = 0; i < elementNumberTotal; i++)
         {
             stressArray[i] = float.Parse(StressLine);
-            StressLine = stressLine.ReadLine();
+            line++;
+            StressLine = d[line];
+
         }
-        stressLine.Close();
+
     }
 
 
     void CreatePointStressArray()
     {
-        StreamReader streamreaderConnectivity = new StreamReader(dataConnectivity, Encoding.Default);
-        string String1 = streamreaderConnectivity.ReadLine();
+        string[] d = dataConnectivity.Split('\n');
+        int line = 0;
+        string String1 = d[line];
+
         string[] StringArray = new string[8];
 
         int elementNum = 0;
 
-        while (String1 != null)
+        while (line < elementNumber - 1)
         {
             StringArray = String1.Split(',');
 
@@ -244,11 +249,11 @@ public class Column2 : MonoBehaviour
             {
                 pointStressArray[Convert.ToInt32(StringArray[k]) - 1] = stressArray[elementNum];
             }
-
-            String1 = streamreaderConnectivity.ReadLine();
+            line++;
+            String1 = d[line];
             elementNum++;
         }
-        streamreaderConnectivity.Close();
+
     }
 
 
@@ -345,6 +350,7 @@ public class Column2 : MonoBehaviour
             {
                 colors[i] = Color32.Lerp(color9, color10, vertices[i].y);
             }
+
         }
     }
 }

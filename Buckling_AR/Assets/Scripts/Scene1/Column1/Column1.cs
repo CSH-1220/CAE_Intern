@@ -15,15 +15,15 @@ public class Column1 : MonoBehaviour
 {
     public int fold = 1;
 
-    public static int boundarycondition = BoundaryConditionPage.Parameter1;
-    public static int section = SectionPage.Parameter1;
-    public static int length = LengthPage.Parameter1;
-    public static int bracing = BracingPage.Parameter1;
+    //public static int boundarycondition = BoundaryConditionPage.Parameter1;
+    //public static int section = SectionPage.Parameter1;
+    //public static int length = LengthPage.Parameter1;
+    //public static int bracing = BracingPage.Parameter1;
 
-    //public static int boundarycondition = 2;
-    //public static int section = 2;
-    //public static int length = 2;
-    //public static int bracing = 1;
+    public static int boundarycondition = 2;
+    public static int section = 2;
+    public static int length = 2;
+    public static int bracing = 1;
 
     //string filePath; 
     static public int index = 1;

@@ -10,7 +10,6 @@ public class ControlsForColumn1 : MonoBehaviour
         Column1.Load();
         Graph_Force.Column1Load();
         Graph_Displacement.Column1Load();
-
     }
     public void Renew()
     {

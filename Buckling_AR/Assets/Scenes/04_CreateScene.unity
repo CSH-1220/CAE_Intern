@@ -1964,7 +1964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   measurementPointPrefab: {fileID: 710968491642687821, guid: cc0f13d71eacc4aeb9127fa2aaceb673, type: 3}
-  measurementFactor: 0.01
+  measurementFactor: 100
   distanceText: {fileID: 2140372208}
   arCameraManager: {fileID: 1236899272}
 --- !u!1 &2110207476

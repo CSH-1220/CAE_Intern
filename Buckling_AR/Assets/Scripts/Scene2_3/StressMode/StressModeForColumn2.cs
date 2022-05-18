@@ -15,7 +15,7 @@ public class StressModeForColumn2 : MonoBehaviour
         ColorPanel2.SetActive(false);
 
     }
-    public void StressModeColumn1()
+    public void StressModeColumn2()
     {
         if (OnColumn2 == false)
         {

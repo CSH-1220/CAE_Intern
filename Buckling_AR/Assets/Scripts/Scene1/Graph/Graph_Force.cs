@@ -11,15 +11,28 @@ using System.Globalization;
 
 public class Graph_Force : MonoBehaviour
 {
-    static int boundarycondition1 = BoundaryConditionPage.Parameter1;
-    static int section1 = SectionPage.Parameter1;
-    static int length1 = LengthPage.Parameter1;
-    static int bracing1 = BracingPage.Parameter1;
+    //static int boundarycondition1 = BoundaryConditionPage.Parameter1;
+    //static int section1 = SectionPage.Parameter1;
+    //static int length1 = LengthPage.Parameter1;
+    //static int bracing1 = BracingPage.Parameter1;
 
-    static int boundarycondition2 = BoundaryConditionPage.Parameter2;
-    static int section2 = SectionPage.Parameter2;
-    static int length2 = LengthPage.Parameter2;
-    static int bracing2 = BracingPage.Parameter2;
+    //static int boundarycondition2 = BoundaryConditionPage.Parameter2;
+    //static int section2 = SectionPage.Parameter2;
+    //static int length2 = LengthPage.Parameter2;
+    //static int bracing2 = BracingPage.Parameter2;
+
+
+    static int boundarycondition1 = 2;
+    static int section1 = 2;
+    static int length1 = 2;
+    static int bracing1 = 1;
+
+    static int boundarycondition2 = 2;
+    static int section2 = 2;
+    static int length2 = 2;
+    static int bracing2 = 1;
+
+
 
     string dataLocation = PreGamePage.dataLocation;
 
@@ -88,13 +101,11 @@ public class Graph_Force : MonoBehaviour
     }
     public static void Column1Load()
     {
-
         if (Graph_Force.valueList1.Count <= Graph_Force.file1Count)
         {
             Graph_Force.index1++;
             Graph_Force.valueList1 = Graph_Force.ChanegeValueList1(index1);
         }
-
     }
     public static void Column2Load()
     {
