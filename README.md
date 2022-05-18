@@ -14,6 +14,8 @@ a. Brackeys使用GitHub Desktop做版本控制：
 
 * https://www.youtube.com/watch?v=qpXxcvS-g3g
 
+* https://iter01.com/564899.html
+
 b. GitHub操作：
 
 * https://www.youtube.com/watch?v=Q9ECyrjbh1A&list=PL2SrkGHjnWcxw6N1-hg34nWy8UWsFOn5V&index=1
