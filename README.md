@@ -39,3 +39,7 @@ a. 簡單2D UI 設置
 * C#基本觀念：https://www.youtube.com/watch?v=T9BeejD3i0g
 
 #### C. 有限元素分析(FEA)概念
+
+* ls-run下載：https://ftp.lstc.com/user/ ;使用者名稱及密碼分別為user及computer
+
+
