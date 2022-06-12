@@ -6,29 +6,35 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/00_PreGame.unity
-    guid: 818d3dc1c254141b198bf20195ca2d91
+    path: Assets/Scenes/00_HomePage.unity
+    guid: 614d5c24f4f144e7295dd89fa7127be2
   - enabled: 1
-    path: Assets/Scenes/01_GamePlay.unity
+    path: Assets/Scenes/01_TutorialPage.unity
+    guid: a53930b6c9ff44f2d92b4692c996e38d
+  - enabled: 1
+    path: Assets/Scenes/02_ExploreScene.unity
+    guid: 536bf3752ba874b5699068f487da6128
+  - enabled: 1
+    path: Assets/Scenes/03_CreateScene.unity
+    guid: a77e82bb2865c4ac59efc35bece3bd90
+  - enabled: 1
+    path: Assets/Scenes/04_GamePlay.unity
     guid: 0f70b96ebee2149fba22511fbcf21afc
   - enabled: 1
-    path: Assets/Scenes/02_EnlargeSceneForColumn1.unity
+    path: Assets/Scenes/05_EnlargeSceneForColumn1.unity
     guid: bb851bc3a38ce46148e079e23f403fc2
   - enabled: 1
-    path: Assets/Scenes/03_EnlargeSceneForColumn2.unity
+    path: Assets/Scenes/06_EnlargeSceneForColumn2.unity
     guid: c6ce81dacebe14cc0869332d526df3fd
   - enabled: 1
-    path: Assets/Scenes/04_CreateScene.unity
+    path: Assets/Scenes/07_CreateScene.unity
     guid: 697b856b1e9904edbbde8deb0cdef328
   - enabled: 1
-    path: Assets/Scenes/05_InputScene.unity
+    path: Assets/Scenes/08_InputScene.unity
     guid: 682392323441943cc82a0c512d0e546e
   - enabled: 1
-    path: Assets/Scenes/06_CreateScene.unity
+    path: Assets/Scenes/09_CreateScene.unity
     guid: 34508893cdc7b493ea62e6549dcedb83
-  - enabled: 1
-    path: Assets/Scenes/07_ExploreScene.unity
-    guid: 536bf3752ba874b5699068f487da6128
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 14c49b35e286d46fb85a53588082f3c0, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: d636f506bffe840d1a83bb62ed32064e, type: 2}

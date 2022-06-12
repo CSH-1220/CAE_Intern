@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
+    x: 9
     y: 53
     width: 1440
     height: 847
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
+  m_Maximized: 1
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 68
+  controlID: 39425
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,12 +139,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1004
+    width: 996.5
     height: 797
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 69
+  controlID: 39465
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,12 +164,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1004
+    width: 996.5
     height: 472.5
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 70
+  controlID: 39466
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -187,7 +187,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 336.5
+    width: 334
     height: 472.5
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -211,9 +211,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 336.5
+    x: 334
     y: 0
-    width: 667.5
+    width: 662.5
     height: 472.5
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -239,14 +239,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 472.5
-    width: 1004
+    width: 996.5
     height: 324.5
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 15}
-  - {fileID: 16}
+  - {fileID: 12}
   m_Selected: 1
   m_LastSelected: 0
 --- !u!114 &11
@@ -264,18 +264,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1004
+    x: 996.5
     y: 0
-    width: 436
+    width: 443.5
     height: 797
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 12}
+  - {fileID: 16}
   - {fileID: 17}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -284,59 +284,26 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13974, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
+  m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Simulator
-    m_Image: {fileID: 8720083202187608617, guid: 0000000000000000d000000000000000, type: 0}
+    m_Text: Console
+    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1004
-    y: 83
-    width: 435
-    height: 776
+    x: 9
+    y: 555.5
+    width: 995.5
+    height: 303.5
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
-  m_SerializedViewNames:
-  - UnityEditor.GameView
-  m_SerializedViewValues:
-  - /Users/dennis/Desktop/CAE_Intern/Buckling_AR/Library/PlayModeViewStates/5e496b8efa5714b7fa111c64f778a487
-  m_PlayModeViewName: Device Simulator
-  m_ShowGizmos: 0
-  m_TargetDisplay: 0
-  m_ClearColor: {r: 0, g: 0, b: 0, a: 1}
-  m_TargetSize: {x: 1242, y: 2688}
-  m_TextureFilterMode: 0
-  m_TextureHideFlags: 61
-  m_RenderIMGUI: 1
-  m_EnterPlayModeBehavior: 0
-  m_UseMipMap: 0
-  m_SimulatorState:
-    controlPanelVisible: 0
-    controlPanelWidth: NaN
-    controlPanelFoldoutKeys:
-    - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
-    controlPanelFoldoutValues: 01
-    pluginNames:
-    - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
-    - UnityEngine.InputSystem.Editor.InputSystemPlugin
-    pluginStates:
-    - '{}'
-    - '{}'
-    scale: 28
-    fitToScreenEnabled: 0
-    rotationDegree: 0
-    highlightSafeAreaEnabled: 0
-    friendlyName: Apple iPhone XS Max
-    networkReachability: 1
-    systemLanguage: 10
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -353,13 +320,13 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
+    x: 9
     y: 83
-    width: 335.5
+    width: 333
     height: 451.5
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -368,9 +335,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 4af7ffff98f7ffffa6f9ffffaaf9ffffb6f9ffffc2f9ffffd0f9ffffe0f9fffffcf9ffff1efaffff34fbffff
+      m_SelectedIDs: 20a20300
+      m_LastClickedID: 238112
+      m_ExpandedIDs: 6a33fdffa2f8fdff54fafdff24fcfdff50fdfdffb6fffdff5801feff2a53feff8a60feff326afeff0c6efeff9877feffc081feffea82feff7a86feff4c88feff2a8dfeff6a92feffa0a6feff84ccfefffcccfeff66cdfeffd8cdfeff40cefeffaccefeff0ecffeff82d0fefffad0feff6ad1feffc2d9feff08dafeff42dafeffc2dafeff9edbfeffe6dbfeff78e2feff80e4feff0cfdfeff5cfdfeff860cffff280dffffae13ffff5415ffffbc15ffffba22ffffc422ffffc822ffffea22ffff3e23ffff5625ffffc625ffff6c26ffffd826ffff1827ffff5827ffff6828ffff402affff4e2cffff042effffce3affff563bffff5c3cffffde3cffff543dffffba3fffffea47ffff524bffffaa9affffbc9bffffec9effff269fffff609fffffa09fffff10a0ffffacaeffffb6aeffffbaaeffffdcaeffff48b1ffffb8b1ffff34b2ffff74b2ffff30b4ffffdac3ffff1ac4ffffa6c5ffffecc5ffffeae8fffff4e8fffff8e8ffff1ae9ffff80e9ffff06eaffff1eeaffff36eaffff9eeaffff86ebffff64f7ffff54faffff34fbffffbec00000fac00000d60d0100f40d0100c00e01002410010096100100d0100100e2100100681201008a120100a0120100d23e01007e3f0100826c0100b86c0100b46e0100726f0100786f010020700100d27001001c7701003277010078770100ba770100347801008c780100a0780100dc8a0100128b0100cc8d01002c8f0100ec8f0100309001005c9001000ca60100fca90100eeac010036ae01003ef2010070f2010094f201005a160200a416020072170200fa180200741a0200301b02004e1b0200661b0200dc210200d8220200642302009a250200b8250200d0250200da2502009c2b0200e62b0200122c0200b42c02003c2e02007a300200b0300200643c0200063f0200b23f0200fa400200a044020014470200544702007c530200de530200e853020046540200825402001c55020090570200d0570200da570200e85702000c6a0200d66a0200ac6b0200206e0200606e0200e28602005689020096890200148a02004ed00200ead00200fed002002ad102009ed102009ad30200b0d30200bed4020004d5020018d502000add02002ede020018e3020068e302007ce3020006e4020052e902006ee90200b6eb0200c0eb020046ec02007aee020096ee02005aef0200d6ef0200ccf2020098f302006ef502001af6020036f9020068f902008cf902006afa02000afc02007efe02009cfe0200befe02003cff020062000300000303007e0403005045030078450300164803003a4803002a4a0300464a0300c24a0300804b0300ac4c03009e4d0300364f0300864f030024500300065103003a6b0300d86d0300fc6e0300a4a10300d0a1030020a2030042a4030038a5030066a50300aca50300
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -410,13 +377,13 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 336.5
+    x: 343
     y: 83
-    width: 665.5
+    width: 660.5
     height: 451.5
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -619,9 +586,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 209.12387, y: 347.99127, z: 15.7451935}
+    m_Target: {x: 733.9288, y: 1348.6561, z: -8.65682}
     speed: 2
-    m_Value: {x: 209.12387, y: 347.99127, z: 15.7451935}
+    m_Value: {x: 733.9288, y: 1348.6561, z: -8.65682}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -672,9 +639,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2086.3855
+    m_Target: 1724.329
     speed: 2
-    m_Value: 2086.3855
+    m_Value: 1724.329
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -715,13 +682,13 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
+    x: 9
     y: 555.5
-    width: 1003
+    width: 995.5
     height: 303.5
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -740,38 +707,38 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts/Scene04/Graph
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts/Scene04/Graph
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/dennis/Desktop/CAE_Intern/Buckling_AR
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: eabc0000
-    m_LastClickedID: 48362
-    m_ExpandedIDs: 000000006664000068640000
+    scrollPos: {x: 0, y: 63.983704}
+    m_SelectedIDs: 2ec80000
+    m_LastClickedID: 51246
+    m_ExpandedIDs: 0000000064640000666400007ab8000016c800007cff0200
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Scene4
+      m_OriginalName: Scene4
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 51224
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 10}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -783,7 +750,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006664000068640000
+    m_ExpandedIDs: 000000006464000066640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -808,8 +775,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 20a20300
+    m_LastClickedInstanceID: 238112
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
@@ -848,34 +815,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Console
-    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 555.5
-    width: 1003
-    height: 303.5
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
---- !u!114 &17
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
   m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -887,9 +826,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1004
+    x: 1005.5
     y: 83
-    width: 435
+    width: 442.5
     height: 776
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -908,3 +847,64 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
+--- !u!114 &17
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13974, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Simulator
+    m_Image: {fileID: 3038311277492192215, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1005.5
+    y: 83
+    width: 442.5
+    height: 776
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_SerializedViewNames:
+  - UnityEditor.GameView
+  m_SerializedViewValues:
+  - /Users/dennis/Desktop/CAE_Intern/Buckling_AR/Library/PlayModeViewStates/5e496b8efa5714b7fa111c64f778a487
+  m_PlayModeViewName: Device Simulator
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 1}
+  m_TargetSize: {x: 1242, y: 2688}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_EnterPlayModeBehavior: 0
+  m_UseMipMap: 0
+  m_SimulatorState:
+    controlPanelVisible: 0
+    controlPanelWidth: 0
+    controlPanelFoldoutKeys:
+    - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
+    controlPanelFoldoutValues: 01
+    pluginNames:
+    - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
+    - UnityEngine.InputSystem.Editor.InputSystemPlugin
+    pluginStates:
+    - '{}'
+    - '{}'
+    scale: 28
+    fitToScreenEnabled: 0
+    rotationDegree: 0
+    highlightSafeAreaEnabled: 0
+    friendlyName: Apple iPhone XS Max
+    networkReachability: 1
+    systemLanguage: 10

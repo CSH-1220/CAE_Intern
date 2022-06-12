@@ -1,14 +1,17 @@
 ﻿<Properties StartupConfiguration="{536EFD59-BE47-07A9-CE3C-5D7ED1C3D318}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Scene2_3/StressMode/StressModeForColumn1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Scene05_06/InformationWindow/InfomationWindowControlColumn2.cs">
     <Files>
-      <File FileName="Temp/Compiled-Standard.shader" Line="10" Column="1" />
-      <File FileName="Assets/Scripts/Scene1/Graph/Graph_Displacement.cs" />
-      <File FileName="Assets/Scripts/Scene2_3/StressMode/StressModeForColumn1.cs" Line="14" Column="1" />
+      <File FileName="Assets/Scripts/Scene2_3/Graph_Force_Column2.cs" Line="16" Column="27" IsPinned="True" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="48" Column="58" />
+      <File FileName="Assets/Scripts/Scene04/InfomationWindowControl.cs" Line="20" Column="58" />
+      <File FileName="Assets/Scripts/Scene05_06/InformationWindow/InfomationWindowControlColumn1.cs" Line="13" Column="86" />
+      <File FileName="Assets/Scripts/Scene05_06/InformationWindow/InfomationWindowControlColumn2.cs" Line="13" Column="86" />
+      <File FileName="Assets/Scripts/Scene04/Graph/Graph_Displacement.cs" Line="74" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c13cb3fe-a27d-45f7-b5c1-674f9118ba04" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3ab1f729-0ed2-4904-9f58-8f65662c6db9" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
