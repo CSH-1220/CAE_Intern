@@ -12,18 +12,26 @@ using System.Linq;
 
 public class Graph_Displacement : MonoBehaviour
 {
-    static int boundarycondition1 = BCPage.Parameter1;
-    static int section1 = SPage.Parameter1;
-    static int length1 = LPage.Parameter1;
-    static int bracing1 = BPage.Parameter1;
+    //static int boundarycondition1 = BCPage.Parameter1;
+    //static int section1 = SPage.Parameter1;
+    //static int length1 = LPage.Parameter1;
+    //static int bracing1 = BPage.Parameter1;
 
-    static int boundarycondition2 = BCPage.Parameter2;
-    static int section2 = SPage.Parameter2;
-    static int length2 = LPage.Parameter2;
-    static int bracing2 = BPage.Parameter2;
+    //static int boundarycondition2 = BCPage.Parameter2;
+    //static int section2 = SPage.Parameter2;
+    //static int length2 = LPage.Parameter2;
+    //static int bracing2 = BPage.Parameter2;
 
 
+    static int boundarycondition1 = 2;
+    static int section1 = 2;
+    static int length1 = 2;
+    static int bracing1 = 1;
 
+    static int boundarycondition2 = 2;
+    static int section2 = 2;
+    static int length2 = 2;
+    static int bracing2 = 1;
 
     string dataLocation = PreGamePage.dataLocation;
 
@@ -49,8 +57,8 @@ public class Graph_Displacement : MonoBehaviour
     private Func<float, string> getAxisLabelX;
     private Func<int, string> getAxisLabelY;
 
-    public static StreamReader file1;
-    public static StreamReader file2;
+    public static string file1;
+    public static string file2;
     private string[] valueString = new string[3];
     private static int fileCount1;
     private static int fileCount2;
@@ -71,13 +79,8 @@ public class Graph_Displacement : MonoBehaviour
         gameObjectsList = new List<GameObject>();
         tooltipGameObject = graphContainer.Find("tooltip").gameObject;
 
-        string pathOfFile1 = dataLocation + @"/BoundaryCondition" + boundarycondition1 + @"/Section" + section1 + @"/Length" + length1 + @"/Bracing" + bracing1 + @"/Displacement/" + Graph_Displacement.index1 + ".txt"; ;
-        string pathOfFile2 = dataLocation + @"/BoundaryCondition" + boundarycondition2 + @"/Section" + section2 + @"/Length" + length2 + @"/Bracing" + bracing2 + @"/Displacement/" + Graph_Displacement.index2 + ".txt"; ;
-        file1 = new StreamReader(pathOfFile1, Encoding.Default);
-        file2 = new StreamReader(pathOfFile2, Encoding.Default);
-
         Graph_Displacement.valueList1 = ChanegeValueList1(Graph_Displacement.index1);
-        Graph_Displacement.valueList2 = ChanegeValueList2(Graph_Displacement.index2);
+        //Graph_Displacement.valueList2 = ChanegeValueList2(Graph_Displacement.index2);
 
         FileCount();
         ShowMaxDisplacement();
@@ -89,9 +92,7 @@ public class Graph_Displacement : MonoBehaviour
     {
         graphVisual1 = new LineGraphVisual(graphContainer, dotSprite, Color.green, new Color(0, 1, 0, 1));
         graphVisual2 = new LineGraphVisual(graphContainer, dotSprite, Color.red, new Color(1, 0, 0, 1));
-
-        ShowGraph(Graph_Displacement.valueList1, Graph_Displacement.valueList2, this.graphVisual1, this.graphVisual2, -1, (float _i) => Mathf.RoundToInt(_i) + "", (int _i) => _i.ToString());
-
+        //ShowGraph(Graph_Displacement.valueList1, Graph_Displacement.valueList2, this.graphVisual1, this.graphVisual2, -1, (float _i) => Mathf.RoundToInt(_i) + "", (int _i) => _i.ToString());
         ChangeMaxDisplacement();
     }
 
@@ -100,7 +101,7 @@ public class Graph_Displacement : MonoBehaviour
         if (Graph_Displacement.index1 < Graph_Displacement.fileCount1)
         {
             Graph_Displacement.index1++;
-            Graph_Displacement.valueList1 = Graph_Displacement.ChanegeValueList1(Graph_Displacement.index1);
+            //Graph_Displacement.valueList1 = Graph_Displacement.ChanegeValueList1(Graph_Displacement.index1);
         }
 
     }
@@ -109,51 +110,60 @@ public class Graph_Displacement : MonoBehaviour
         if (Graph_Displacement.index2 < fileCount2)
         {
             Graph_Displacement.index2++;
-            Graph_Displacement.valueList2 = Graph_Displacement.ChanegeValueList2(Graph_Displacement.index2);
+            //Graph_Displacement.valueList2 = Graph_Displacement.ChanegeValueList2(Graph_Displacement.index2);
         }
 
     }
     public static void Column1Renew()
     {
         Graph_Displacement.index1 = 1;
-        Graph_Displacement.valueList1 = Graph_Displacement.ChanegeValueList1(Graph_Displacement.index1);
+        //Graph_Displacement.valueList1 = Graph_Displacement.ChanegeValueList1(Graph_Displacement.index1);
     }
 
     public static void Column2Renew()
     {
         Graph_Displacement.index2 = 1;
-        Graph_Displacement.valueList2 = Graph_Displacement.ChanegeValueList2(Graph_Displacement.index2);
+        //Graph_Displacement.valueList2 = Graph_Displacement.ChanegeValueList2(Graph_Displacement.index2);
     }
 
 
 
     private void FileCount()
     {
-        DirectoryInfo File1 = new DirectoryInfo(dataLocation + @"/BoundaryCondition" + boundarycondition1 + @"/Section" + section1 + @"/Length" + length1 + @"/Bracing" + bracing1 + @"/Displacement");
-        FileInfo[] files1 = File1.GetFiles("*.txt");
-        fileCount1 = files1.Length - 1;
+        var textFile1 = Resources.Load<TextAsset>(@"ColumnData/BoundaryCondition" + boundarycondition1 + @"/Section" + section1 + @"/Length" + length1 + @"/Bracing" + bracing1 + @"/Displacement/" + index1);
+        file1 = textFile1.text;
+        fileCount1 = file1.Split('\n').Length;
+        var textFile2 = Resources.Load<TextAsset>(@"ColumnData/BoundaryCondition" + boundarycondition2 + @"/Section" + section2 + @"/Length" + length2 + @"/Bracing" + bracing2 + @"/Displacement/" + index2);
+        file2 = textFile2.text;
+        fileCount2 = file2.Split('\n').Length;
 
-        DirectoryInfo File2 = new DirectoryInfo(dataLocation + @"/BoundaryCondition" + boundarycondition2 + @"/Section" + section2 + @"/Length" + length2 + @"/Bracing" + bracing2 + @"/Displacement");
-        FileInfo[] files2 = File2.GetFiles("*.txt");
-        fileCount2 = files2.Length - 1;
     }
     private static List<float> ChanegeValueList1(int index)
     {
         Graph_Displacement.valueList1.Clear();
         CultureInfo providers = new CultureInfo("en-US");
         NumberStyles styles = NumberStyles.Float;
-        string pathOfFile = PreGamePage.dataLocation + @"/BoundaryCondition" + boundarycondition1 + @"/Section" + section1 + @"/Length" + length1 + @"/Bracing" + bracing1 + @"/Displacement/" + index + ".txt"; ;
-        Graph_Displacement.file1 = new StreamReader(pathOfFile, Encoding.Default);
-        string valueLine = Graph_Displacement.file1.ReadLine();
 
-        while (valueLine != null)
+        var textFile1 = Resources.Load<TextAsset>(@"ColumnData/BoundaryCondition" + boundarycondition1 + @"/Section" + section1 + @"/Length" + length1 + @"/Bracing" + bracing1 + @"/Displacement/" + index);
+        file1 = textFile1.text;
+        string[] forceResultantList = file1.Split('\n');
+        for (int i = 0; i< forceResultantList.Length;i++)
         {
-            float value = Single.Parse(valueLine, styles, providers);
+            string valueLine = forceResultantList[i];
+            //float value = Single.Parse(valueLine, styles, providers);
+            float value = Single.Parse(valueLine, System.Globalization.NumberStyles.Float);
             Graph_Displacement.valueList1.Add(value);
-
-            valueLine = Graph_Displacement.file1.ReadLine();
         }
-
+        //int i = 0;
+        //string valueLine = forceResultantList[i];
+        //while (valueLine != null)
+        //{
+        //    float value = float.Parse(valueLine);
+        //    //float value = float.Parse(valueLine, styles, providers);
+        //    //float value = Single.Parse(valueLine, styles, providers);
+        //    Graph_Displacement.valueList1.Add(value);
+        //    i++;
+        //}
         Graph_Displacement.maxVisibleValueAmount = Graph_Displacement.valueList1.Count + Graph_Displacement.valueList2.Count;
         Graph_Displacement.valueList1.Reverse();
         return Graph_Displacement.valueList1;
@@ -164,18 +174,19 @@ public class Graph_Displacement : MonoBehaviour
         Graph_Displacement.valueList2.Clear();
         CultureInfo providers = new CultureInfo("en-US");
         NumberStyles styles = NumberStyles.Float;
-        string pathOfFile = PreGamePage.dataLocation + @"/BoundaryCondition" + boundarycondition2 + @"/Section" + section2 + @"/Length" + length2 + @"/Bracing" + bracing2 + @"/Displacement/" + index + ".txt"; ;
-        file2 = new StreamReader(pathOfFile, Encoding.Default);
-        string valueLine = file2.ReadLine();
-
+        var textFile2 = Resources.Load<TextAsset>(@"ColumnData/BoundaryCondition" + boundarycondition2 + @"/Section" + section2 + @"/Length" + length2 + @"/Bracing" + bracing2 + @"/Displacement/" + index);
+        file2 = textFile2.text;
+        string[] forceResultantList = file2.Split('\n');
+        int i = 0;
+        string valueLine = forceResultantList[i];
         while (valueLine != null)
         {
-            float value = Single.Parse(valueLine, styles, providers);
+            float value = float.Parse(valueLine);
+            //float value = float.Parse(valueLine, styles, providers);
+            //float value = Single.Parse(valueLine, styles, providers);
             Graph_Displacement.valueList2.Add(value);
-
-            valueLine = file2.ReadLine();
+            i++;
         }
-
         Graph_Displacement.maxVisibleValueAmount = Graph_Displacement.valueList1.Count + Graph_Displacement.valueList2.Count;
         Graph_Displacement.valueList2.Reverse();
         return Graph_Displacement.valueList2;
@@ -342,11 +353,7 @@ public class Graph_Displacement : MonoBehaviour
         {
             float xPosition = ((valueList1[i] - xMinimum) / (xMaximum - xMinimum)) * graphWidth;
             float yPosition = ySize1 + yIndex1 * ySize1;
-
-
             gameObjectsList.AddRange(graphVisual1.AddGraphVisual(new Vector2(xPosition, yPosition), ySize1));
-
-
             if (length1 > length2 || length1 == length2)
             {
                 RectTransform labelY = Instantiate(labelTemplateY);
@@ -370,7 +377,6 @@ public class Graph_Displacement : MonoBehaviour
             }
             yIndex1++;
         }
-
 
         for (int j = Mathf.Max(valueList2.Count - maxVisibleValueAmount, 0); j < valueList2.Count; j++)
         {
@@ -419,8 +425,6 @@ public class Graph_Displacement : MonoBehaviour
             gameObjectsList.Add(labelX.gameObject);
         }
     }
-
-
     private interface IGraphVisual
     {
         List<GameObject> AddGraphVisual(Vector2 graphPosition, float graphPositionHeight);
@@ -440,7 +444,6 @@ public class Graph_Displacement : MonoBehaviour
             this.dotColor = dotColor;
             this.dotConnectionColor = dotConnectionColor;
         }
-
         public List<GameObject> AddGraphVisual(Vector2 graphPosition, float graphPositionHeight)
         {
             List<GameObject> gameObjectList = new List<GameObject>();
@@ -456,7 +459,6 @@ public class Graph_Displacement : MonoBehaviour
 
             return gameObjectList;
         }
-
         private GameObject CreateDot(Vector2 ancordedPosition)
         {
             GameObject gameObject = new GameObject("dot", typeof(Image));
@@ -472,7 +474,6 @@ public class Graph_Displacement : MonoBehaviour
 
             return gameObject;
         }
-
         private GameObject CreateDotConnection(Vector2 dotPositionA, Vector2 dotPositionB)
         {
             GameObject gameObject = new GameObject("dotConnection", typeof(Image));

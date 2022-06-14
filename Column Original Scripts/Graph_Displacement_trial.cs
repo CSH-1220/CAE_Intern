@@ -81,7 +81,6 @@ public class Graph_Displacement : MonoBehaviour
     {
         graphVisual1 = new LineGraphVisual(graphContainer, dotSprite, Color.green, new Color(0, 1, 0, 1));
         graphVisual2 = new LineGraphVisual(graphContainer, dotSprite, Color.red, new Color(1, 0, 0, 1));
-
         ShowGraph(Graph_Displacement.valueList1, Graph_Displacement.valueList2, this.graphVisual1, this.graphVisual2, -1, (float _i) => Mathf.RoundToInt(_i) + "", (int _i) => _i.ToString());
         ChangeMaxDisplacement();
     }
@@ -333,11 +332,7 @@ public class Graph_Displacement : MonoBehaviour
         {
             float xPosition = ((valueList1[i] - xMinimum) / (xMaximum - xMinimum)) * graphWidth;
             float yPosition = ySize1 + yIndex1 * ySize1;
-
-
             gameObjectsList.AddRange(graphVisual1.AddGraphVisual(new Vector2(xPosition, yPosition), ySize1));
-
-
             if (length1 > length2 || length1 == length2)
             {
                 RectTransform labelY = Instantiate(labelTemplateY);
@@ -361,7 +356,6 @@ public class Graph_Displacement : MonoBehaviour
             }
             yIndex1++;
         }
-
 
         for (int j = Mathf.Max(valueList2.Count - maxVisibleValueAmount, 0); j < valueList2.Count; j++)
         {
@@ -410,8 +404,6 @@ public class Graph_Displacement : MonoBehaviour
             gameObjectsList.Add(labelX.gameObject);
         }
     }
-
-
     private interface IGraphVisual
     {
         List<GameObject> AddGraphVisual(Vector2 graphPosition, float graphPositionHeight);
@@ -431,7 +423,6 @@ public class Graph_Displacement : MonoBehaviour
             this.dotColor = dotColor;
             this.dotConnectionColor = dotConnectionColor;
         }
-
         public List<GameObject> AddGraphVisual(Vector2 graphPosition, float graphPositionHeight)
         {
             List<GameObject> gameObjectList = new List<GameObject>();
@@ -447,7 +438,6 @@ public class Graph_Displacement : MonoBehaviour
 
             return gameObjectList;
         }
-
         private GameObject CreateDot(Vector2 ancordedPosition)
         {
             GameObject gameObject = new GameObject("dot", typeof(Image));
@@ -463,7 +453,6 @@ public class Graph_Displacement : MonoBehaviour
 
             return gameObject;
         }
-
         private GameObject CreateDotConnection(Vector2 dotPositionA, Vector2 dotPositionB)
         {
             GameObject gameObject = new GameObject("dotConnection", typeof(Image));

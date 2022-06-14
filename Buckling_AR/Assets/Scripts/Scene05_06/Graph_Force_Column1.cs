@@ -49,17 +49,16 @@ public class Graph_Force_Column1 : MonoBehaviour
         labelTemplateX = graphContainer.Find("labelTemplateX").GetComponent<RectTransform>();
         labelTemplateY = graphContainer.Find("labelTemplateY").GetComponent<RectTransform>();
         gameObjectsList = new List<GameObject>();
-        string pathOfFile1 = dataLocation + @"/BoundaryCondition" + boundarycondition1 + @"/Section" + section1 + @"/Length" + length1 + @"/Bracing" + bracing1 + @"/forceresultant.txt"; ;
-        file1 = new StreamReader(pathOfFile1, Encoding.Default);
-        file1Count = IndexCount(file1);
-        MaxFileCount = Mathf.Max(file1Count);
-        file1 = new StreamReader(pathOfFile1, Encoding.Default);
+        //string pathOfFile1 = dataLocation + @"/BoundaryCondition" + boundarycondition1 + @"/Section" + section1 + @"/Length" + length1 + @"/Bracing" + bracing1 + @"/forceresultant.txt"; ;
+        //file1 = new StreamReader(pathOfFile1, Encoding.Default);
+        //file1Count = IndexCount(file1);
+        //MaxFileCount = Mathf.Max(file1Count);
+        //file1 = new StreamReader(pathOfFile1, Encoding.Default);
         LoadValueSetting();
     }
     void Update()
     {
         IGraphVisual graphVisual1 = new LineGraphVisual(graphContainer, dotSprite, Color.green, new Color(0, 1, 0, 1));
-
         this.graphVisual1 = graphVisual1;
         ShowGraph(Graph_Force.valueList1, this.graphVisual1, -1, (int _i) => "", (float _f) => Mathf.RoundToInt(_f) + " kN");
         ShowCurrentLoad();
