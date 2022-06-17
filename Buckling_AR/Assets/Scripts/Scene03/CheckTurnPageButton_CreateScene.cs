@@ -12,7 +12,9 @@ public class CheckTurnPageButton_CreateScene : MonoBehaviour
     public static int PageOfSelection = 1;
     public static int PageOfCreateColumn1 = 2;
     public static int PageOfCreateColumn2 = 3;
-    public static int PageOfLast = 4;
+    public static int PageOfCreateColumn3 = 4;
+    public static int PageOfCreateColumn4 = 5;
+    public static int PageOfLast = 6;
 
     private void Update()
     {
@@ -30,6 +32,24 @@ public class CheckTurnPageButton_CreateScene : MonoBehaviour
         }
 
         if (CreateScenePage.PageNumber == PageOfCreateColumn2)
+        {
+            NextPageButton.SetActive(true);
+            LastPageButton.SetActive(true);
+        }
+
+        if (CreateScenePage.PageNumber == PageOfSelection)
+        {
+            LastPageButton.SetActive(false);
+            NextPageButton.SetActive(false);
+        }
+
+        if (CreateScenePage.PageNumber == PageOfCreateColumn3)
+        {
+            NextPageButton.SetActive(true);
+            LastPageButton.SetActive(true);
+        }
+
+        if (CreateScenePage.PageNumber == PageOfCreateColumn4)
         {
             NextPageButton.SetActive(true);
             LastPageButton.SetActive(true);

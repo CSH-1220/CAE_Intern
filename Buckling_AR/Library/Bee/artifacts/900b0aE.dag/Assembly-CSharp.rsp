@@ -396,7 +396,10 @@
 "Assets/CodeMonkey/Utils/World_Bar.cs"
 "Assets/CodeMonkey/Utils/World_Mesh.cs"
 "Assets/CodeMonkey/Utils/World_Sprite.cs"
+"Assets/ColumnInfoSwitchControl.cs"
+"Assets/DataSwitchControl.cs"
 "Assets/Fonts/Script/scriptTexttest.cs"
+"Assets/QuantityControl.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Scene00/HomePageControl.cs"
 "Assets/Scripts/Scene01/CheckParameterSeen_Tutorial.cs"
@@ -446,6 +449,7 @@
 "Assets/Scripts/Some Old One/SortInfoForColumn12/BracingPage.cs"
 "Assets/Scripts/Some Old One/SortInfoForColumn12/LengthPage.cs"
 "Assets/Scripts/Some Old One/SortInfoForColumn12/SectionPage.cs"
+"Assets/SwitchControl.cs"
 -langversion:9.0
 
 /deterministic

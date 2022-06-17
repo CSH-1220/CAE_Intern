@@ -8,18 +8,19 @@ public class ColumnModeSelection : MonoBehaviour
 {
     public Toggle DataBaseToggle;
     public Toggle SurroundingsToggle;
+    public GameObject QuantityBoard;
 
     public void goToMode()
     {
         //Review buckling formula
         if (DataBaseToggle.isOn == true)
         {
-            CreateScenePage.NextPage();
+            QuantityBoard.SetActive(true);
         }
         //Go to explore mode
         if (SurroundingsToggle.isOn == true)
         {
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene(5);
         }
     }
 }

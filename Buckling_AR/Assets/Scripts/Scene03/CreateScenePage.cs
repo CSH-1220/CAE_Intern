@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class CreateScenePage : MonoBehaviour
 {
     private static ScrollRect scrollRect;
-    private static float[] PageArray = new float[] { 0f, 0.333f, 0.677f, 1f }; //4頁
+    private static float[] PageArray = new float[] { 0f, 0.2f, 0.4f, 0.6f, 0.8f, 1f }; //6頁
     private static float targetHorizontalPosition = 0;
-    private string[] Title = new string[] {"Create Your First Column!!", "Create Your Second Column!!", "Instruction" };
+    private string[] Title = new string[] {"Create Your First Column!!", "Create Your Second Column!!", "Create Your Third Column!!", "Create Your Fourth Column!!", "Instruction" };
     public float smoothing = 5;
     private static bool go = false;
     static public int PageNumber;
@@ -39,6 +39,17 @@ public class CreateScenePage : MonoBehaviour
         if (PageNumber == 4)
         {
             GameObject.Find("Canvas/IntroduceBoard/Title/Text").GetComponent<Text>().text = Title[2];
+            GameObject.Find("Canvas/IntroduceBoard/Title/Text").GetComponent<Text>().fontSize = 48;
+        }
+        if (PageNumber == 5)
+        {
+            GameObject.Find("Canvas/IntroduceBoard/Title/Text").GetComponent<Text>().text = Title[3];
+            GameObject.Find("Canvas/IntroduceBoard/Title/Text").GetComponent<Text>().fontSize = 48;
+        }
+
+        if (PageNumber == 6)
+        {
+            GameObject.Find("Canvas/IntroduceBoard/Title/Text").GetComponent<Text>().text = Title[4];
             GameObject.Find("Canvas/IntroduceBoard/Title/Text").GetComponent<Text>().fontSize = 80;
         }
     }
@@ -55,18 +66,37 @@ public class CreateScenePage : MonoBehaviour
                 index = i + 1;
             }
         }
-        targetHorizontalPosition = PageArray[index];
-        PageNumber = index + 1;
+        if (QuantityControl.ColumnNum == 1 && PageNumber == 2)
+        {
+            targetHorizontalPosition = PageArray[5];
+            PageNumber = 6;
+        }
+        else if (QuantityControl.ColumnNum==2 && PageNumber==3)
+        {
+            targetHorizontalPosition = PageArray[5];
+            PageNumber = 6;
+        }
+        else if (QuantityControl.ColumnNum == 3 && PageNumber == 4)
+        {
+            targetHorizontalPosition = PageArray[5];
+            PageNumber = 6;
+        }
+        else if (QuantityControl.ColumnNum == 4 && PageNumber == 5)
+        {
+            targetHorizontalPosition = PageArray[5];
+            PageNumber = 6;
+        }
+        else
+        {
+            targetHorizontalPosition = PageArray[index];
+            PageNumber = index + 1;
+        }
+
     }
 
     public void LastPage()
     {
-        if (PageNumber == CheckTurnPageButton.PageOfCreateColumn1)
-        {
-            Invoke(nameof(GotoPageFormula), 0f);
-        }
-        else
-        {
+
             go = true;
             float PosX = scrollRect.horizontalNormalizedPosition;
             int index = 1;
@@ -78,24 +108,30 @@ public class CreateScenePage : MonoBehaviour
                     index = i - 1;
                 }
             }
+        if (QuantityControl.ColumnNum == 1 && PageNumber == 6)
+        {
+            targetHorizontalPosition = PageArray[1];
+            PageNumber = 2;
+        }
+        else if (QuantityControl.ColumnNum == 2 && PageNumber == 6)
+        {
+            targetHorizontalPosition = PageArray[2];
+            PageNumber = 3;
+        }
+        else if (QuantityControl.ColumnNum == 3 && PageNumber == 6)
+        {
+            targetHorizontalPosition = PageArray[3];
+            PageNumber = 4;
+        }
+        else if (QuantityControl.ColumnNum == 4 && PageNumber == 6)
+        {
+            targetHorizontalPosition = PageArray[4];
+            PageNumber = 5;
+        }
+        else
+        {
             targetHorizontalPosition = PageArray[index];
             PageNumber = index + 1;
         }
-    }
-
-    public void GotoPageFormula()
-    {
-        go = true;
-        int index = 1;
-        targetHorizontalPosition = PageArray[index];
-        PageNumber = index + 1;
-    }
-
-    public void GotoPageCreateColumn()
-    {
-        go = true;
-        int index = 6;
-        targetHorizontalPosition = PageArray[index];
-        PageNumber = index + 1;
     }
 }

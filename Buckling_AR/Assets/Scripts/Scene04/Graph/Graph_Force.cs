@@ -136,7 +136,7 @@ public class Graph_Force : MonoBehaviour
         LoadGameObject1.transform.SetParent(transform, false);
         LoadGameObject1.GetComponent<RectTransform>().sizeDelta = new Vector2(150, 100);
         LoadGameObject1.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
-        LoadGameObject1.transform.localPosition = new Vector2(320, 10);
+        LoadGameObject1.transform.localPosition = new Vector2(420, 100);
         LoadGameObject1.GetComponent<Text>().text = "Load : " + "\n" + "0 kN";
         LoadGameObject1.GetComponent<Text>().font = Font;
         LoadGameObject1.GetComponent<Text>().fontStyle = FontStyle.Bold;
@@ -150,7 +150,7 @@ public class Graph_Force : MonoBehaviour
         LoadGameObject2.transform.SetParent(transform, false);
         LoadGameObject2.GetComponent<RectTransform>().sizeDelta = new Vector2(150, 100);
         LoadGameObject2.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
-        LoadGameObject2.transform.localPosition = new Vector2(320, -80);
+        LoadGameObject2.transform.localPosition = new Vector2(420, 0);
         LoadGameObject2.GetComponent<Text>().text = "Load : " + "\n" + "0 kN";
         LoadGameObject2.GetComponent<Text>().font = Font;
         LoadGameObject2.GetComponent<Text>().fontStyle = FontStyle.Bold;

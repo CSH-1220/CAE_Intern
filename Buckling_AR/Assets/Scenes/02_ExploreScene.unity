@@ -869,6 +869,7 @@ MonoBehaviour:
   - {fileID: 2082026165216623806, guid: 9ac6c9bb567b947a886ef86d71f72148, type: 3}
   - {fileID: 8642029430629622812, guid: 45165b5dbfdc642c3b83fe83c63fe4bb, type: 3}
   - {fileID: 6773273895004340813, guid: 0d3b1c783a21e42078b5eca466d29de4, type: 3}
+  - {fileID: 758420039834337656, guid: 80b84de00ce134cd397d4638d35b1a91, type: 3}
   scaleFactor: {x: 0.1, y: 0.1, z: 0.1}
 --- !u!114 &872727738
 MonoBehaviour:
@@ -883,7 +884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SerializedLibrary: {fileID: 11400000, guid: f71c759085c8d46d8a24208bac7a2390, type: 2}
-  m_MaxNumberOfMovingImages: 3
+  m_MaxNumberOfMovingImages: 4
   m_TrackedImagePrefab: {fileID: 0}
 --- !u!1 &935957815
 GameObject:

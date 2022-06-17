@@ -56,8 +56,10 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/ColumnInfoSwitchControl.cs" />
     <Compile Include="Assets/Scripts/Scene04/Column1/Column1.cs" />
     <Compile Include="Assets/CodeMonkey/Utils/Button_UI.cs" />
+    <Compile Include="Assets/QuantityControl.cs" />
     <Compile Include="Assets/Scripts/Scene04/StressMode.cs" />
     <Compile Include="Assets/CodeMonkey/Utils/World_Mesh.cs" />
     <Compile Include="Assets/Scripts/Scene01/PageI_Question.cs" />
@@ -84,6 +86,7 @@
     <Compile Include="Assets/Scripts/Scene05_06/Graph_Displacement_Column1.cs" />
     <Compile Include="Assets/Scripts/Scene05_06/Settings/SettingControls3.cs" />
     <Compile Include="Assets/Scripts/Some Old One/Main/PreGamePage.cs" />
+    <Compile Include="Assets/DataSwitchControl.cs" />
     <Compile Include="Assets/Scripts/Scene05_06/Graph_Force_Column2.cs" />
     <Compile Include="Assets/Scripts/Some Old One/SortInfoForColumn12/LengthPage.cs" />
     <Compile Include="Assets/Scripts/Scene08_09/OkCancelControls.cs" />
@@ -112,6 +115,7 @@
     <Compile Include="Assets/Scripts/Scene04/InfomationWindowControl.cs" />
     <Compile Include="Assets/Scripts/Scene05_06/InformationWindow/InfomationWindowControlColumn2.cs" />
     <Compile Include="Assets/CodeMonkey/Utils/UI_Bar.cs" />
+    <Compile Include="Assets/SwitchControl.cs" />
     <Compile Include="Assets/Scripts/Scene04/Graph/Graph_Force.cs" />
     <Compile Include="Assets/Scripts/Scene04/Column1/ColorPanelForColumn1.cs" />
     <Compile Include="Assets/Scripts/Scene03/Bpage.cs" />

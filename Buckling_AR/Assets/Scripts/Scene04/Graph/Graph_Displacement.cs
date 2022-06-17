@@ -80,7 +80,7 @@ public class Graph_Displacement : MonoBehaviour
         tooltipGameObject = graphContainer.Find("tooltip").gameObject;
 
         Graph_Displacement.valueList1 = ChanegeValueList1(Graph_Displacement.index1);
-        //Graph_Displacement.valueList2 = ChanegeValueList2(Graph_Displacement.index2);
+        Graph_Displacement.valueList2 = ChanegeValueList2(Graph_Displacement.index2);
 
         FileCount();
         ShowMaxDisplacement();
@@ -92,7 +92,7 @@ public class Graph_Displacement : MonoBehaviour
     {
         graphVisual1 = new LineGraphVisual(graphContainer, dotSprite, Color.green, new Color(0, 1, 0, 1));
         graphVisual2 = new LineGraphVisual(graphContainer, dotSprite, Color.red, new Color(1, 0, 0, 1));
-        //ShowGraph(Graph_Displacement.valueList1, Graph_Displacement.valueList2, this.graphVisual1, this.graphVisual2, -1, (float _i) => Mathf.RoundToInt(_i) + "", (int _i) => _i.ToString());
+        ShowGraph(Graph_Displacement.valueList1, Graph_Displacement.valueList2, this.graphVisual1, this.graphVisual2, -1, (float _i) => Mathf.RoundToInt(_i) + "", (int _i) => _i.ToString());
         ChangeMaxDisplacement();
     }
 
@@ -101,7 +101,7 @@ public class Graph_Displacement : MonoBehaviour
         if (Graph_Displacement.index1 < Graph_Displacement.fileCount1)
         {
             Graph_Displacement.index1++;
-            //Graph_Displacement.valueList1 = Graph_Displacement.ChanegeValueList1(Graph_Displacement.index1);
+            Graph_Displacement.valueList1 = Graph_Displacement.ChanegeValueList1(Graph_Displacement.index1);
         }
 
     }
@@ -110,20 +110,20 @@ public class Graph_Displacement : MonoBehaviour
         if (Graph_Displacement.index2 < fileCount2)
         {
             Graph_Displacement.index2++;
-            //Graph_Displacement.valueList2 = Graph_Displacement.ChanegeValueList2(Graph_Displacement.index2);
+            Graph_Displacement.valueList2 = Graph_Displacement.ChanegeValueList2(Graph_Displacement.index2);
         }
 
     }
     public static void Column1Renew()
     {
         Graph_Displacement.index1 = 1;
-        //Graph_Displacement.valueList1 = Graph_Displacement.ChanegeValueList1(Graph_Displacement.index1);
+        Graph_Displacement.valueList1 = Graph_Displacement.ChanegeValueList1(Graph_Displacement.index1);
     }
 
     public static void Column2Renew()
     {
         Graph_Displacement.index2 = 1;
-        //Graph_Displacement.valueList2 = Graph_Displacement.ChanegeValueList2(Graph_Displacement.index2);
+        Graph_Displacement.valueList2 = Graph_Displacement.ChanegeValueList2(Graph_Displacement.index2);
     }
 
 
@@ -147,13 +147,29 @@ public class Graph_Displacement : MonoBehaviour
         var textFile1 = Resources.Load<TextAsset>(@"ColumnData/BoundaryCondition" + boundarycondition1 + @"/Section" + section1 + @"/Length" + length1 + @"/Bracing" + bracing1 + @"/Displacement/" + index);
         file1 = textFile1.text;
         string[] forceResultantList = file1.Split('\n');
-        for (int i = 0; i< forceResultantList.Length;i++)
+        
+        foreach (var valueLine in forceResultantList)
         {
-            string valueLine = forceResultantList[i];
-            //float value = Single.Parse(valueLine, styles, providers);
-            float value = Single.Parse(valueLine, System.Globalization.NumberStyles.Float);
-            Graph_Displacement.valueList1.Add(value);
+            Single value;
+            if (Single.TryParse(valueLine, out value))
+            {
+                Graph_Displacement.valueList1.Add(value);
+            }
         }
+        //for (int i = 0; i < forceResultantList.Length; i++)
+        //{
+        //    //string valueLine = forceResultantList[i];
+        //    Single value;
+        //    foreach (var valueLine in forceResultantList)
+        //    {
+        //        if (Single.TryParse(valueLine, out value))
+        //        {
+        //            Graph_Displacement.valueList1.Add(value);
+        //        }
+        //    }
+        //    //float value = Single.Parse(valueLine, styles, providers);
+        //    //Graph_Displacement.valueList1.Add(value);
+        //}
         //int i = 0;
         //string valueLine = forceResultantList[i];
         //while (valueLine != null)
@@ -177,16 +193,24 @@ public class Graph_Displacement : MonoBehaviour
         var textFile2 = Resources.Load<TextAsset>(@"ColumnData/BoundaryCondition" + boundarycondition2 + @"/Section" + section2 + @"/Length" + length2 + @"/Bracing" + bracing2 + @"/Displacement/" + index);
         file2 = textFile2.text;
         string[] forceResultantList = file2.Split('\n');
-        int i = 0;
-        string valueLine = forceResultantList[i];
-        while (valueLine != null)
+        foreach (var valueLine in forceResultantList)
         {
-            float value = float.Parse(valueLine);
-            //float value = float.Parse(valueLine, styles, providers);
-            //float value = Single.Parse(valueLine, styles, providers);
-            Graph_Displacement.valueList2.Add(value);
-            i++;
+            Single value;
+            if (Single.TryParse(valueLine, out value))
+            {
+                Graph_Displacement.valueList2.Add(value);
+            }
         }
+        //int i = 0;
+        //string valueLine = forceResultantList[i];
+        //while (valueLine != null)
+        //{
+        //    float value = float.Parse(valueLine);
+        //    //float value = float.Parse(valueLine, styles, providers);
+        //    //float value = Single.Parse(valueLine, styles, providers);
+        //    Graph_Displacement.valueList2.Add(value);
+        //    i++;
+        //}
         Graph_Displacement.maxVisibleValueAmount = Graph_Displacement.valueList1.Count + Graph_Displacement.valueList2.Count;
         Graph_Displacement.valueList2.Reverse();
         return Graph_Displacement.valueList2;
@@ -196,55 +220,55 @@ public class Graph_Displacement : MonoBehaviour
     {
         MaxDispGameObject1 = new GameObject("MaxDisplacement1", typeof(Text), typeof(Shadow));
         MaxDispGameObject1.transform.SetParent(transform, false);
-        MaxDispGameObject1.GetComponent<RectTransform>().sizeDelta = new Vector2(250, 90);
+        MaxDispGameObject1.GetComponent<RectTransform>().sizeDelta = new Vector2(420, 100);
         MaxDispGameObject1.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
-        MaxDispGameObject1.transform.localPosition = new Vector2(320, 40);
-        MaxDispGameObject1.GetComponent<Text>().text = "Max Displacement:" + "\n" + "0 mm";
+        MaxDispGameObject1.transform.localPosition = new Vector2(500, 140);
+        MaxDispGameObject1.GetComponent<Text>().text = "Max Displacement:" + "\n" + "0 mm at : 0 m";
         MaxDispGameObject1.GetComponent<Text>().font = Font;
         MaxDispGameObject1.GetComponent<Text>().fontStyle = FontStyle.Bold;
-        MaxDispGameObject1.GetComponent<Text>().fontSize = 23;
+        MaxDispGameObject1.GetComponent<Text>().fontSize = 28;
         MaxDispGameObject1.GetComponent<Text>().color = new Color32(0, 255, 0, 255);
         MaxDispGameObject1.GetComponent<Shadow>().effectColor = new Color32(0, 0, 0, 255);
         MaxDispGameObject1.GetComponent<Shadow>().effectDistance = new Vector2(1, -1);
 
-        MaxDisplacementLocationObject1 = new GameObject("MaxDisplacementLocation1", typeof(Text), typeof(Shadow));
-        MaxDisplacementLocationObject1.transform.SetParent(transform, false);
-        MaxDisplacementLocationObject1.GetComponent<RectTransform>().sizeDelta = new Vector2(250, 90);
-        MaxDisplacementLocationObject1.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
-        MaxDisplacementLocationObject1.transform.localPosition = new Vector2(570, 40);
-        MaxDisplacementLocationObject1.GetComponent<Text>().text = "Max Displacement at:" + "\n" + "0 m";
-        MaxDisplacementLocationObject1.GetComponent<Text>().font = Font;
-        MaxDisplacementLocationObject1.GetComponent<Text>().fontStyle = FontStyle.Bold;
-        MaxDisplacementLocationObject1.GetComponent<Text>().fontSize = 23;
-        MaxDisplacementLocationObject1.GetComponent<Text>().color = new Color32(0, 255, 0, 255);
-        MaxDisplacementLocationObject1.GetComponent<Shadow>().effectColor = new Color32(0, 0, 0, 255);
-        MaxDisplacementLocationObject1.GetComponent<Shadow>().effectDistance = new Vector2(1, -1);
+        //MaxDisplacementLocationObject1 = new GameObject("MaxDisplacementLocation1", typeof(Text), typeof(Shadow));
+        //MaxDisplacementLocationObject1.transform.SetParent(transform, false);
+        //MaxDisplacementLocationObject1.GetComponent<RectTransform>().sizeDelta = new Vector2(250, 90);
+        //MaxDisplacementLocationObject1.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+        //MaxDisplacementLocationObject1.transform.localPosition = new Vector2(570, 40);
+        //MaxDisplacementLocationObject1.GetComponent<Text>().text = "Max Displacement at:" + "\n" + "0 m";
+        //MaxDisplacementLocationObject1.GetComponent<Text>().font = Font;
+        //MaxDisplacementLocationObject1.GetComponent<Text>().fontStyle = FontStyle.Bold;
+        //MaxDisplacementLocationObject1.GetComponent<Text>().fontSize = 23;
+        //MaxDisplacementLocationObject1.GetComponent<Text>().color = new Color32(0, 255, 0, 255);
+        //MaxDisplacementLocationObject1.GetComponent<Shadow>().effectColor = new Color32(0, 0, 0, 255);
+        //MaxDisplacementLocationObject1.GetComponent<Shadow>().effectDistance = new Vector2(1, -1);
 
-        MaxDispGameObject2 = new GameObject("MaxDisplacement1", typeof(Text), typeof(Shadow));
+        MaxDispGameObject2 = new GameObject("MaxDisplacement2", typeof(Text), typeof(Shadow));
         MaxDispGameObject2.transform.SetParent(transform, false);
-        MaxDispGameObject2.GetComponent<RectTransform>().sizeDelta = new Vector2(250, 90);
+        MaxDispGameObject2.GetComponent<RectTransform>().sizeDelta = new Vector2(420, 100);
         MaxDispGameObject2.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
-        MaxDispGameObject2.transform.localPosition = new Vector2(320, -90);
-        MaxDispGameObject2.GetComponent<Text>().text = "Max Displacement:" + "\n" + "0 mm";
+        MaxDispGameObject2.transform.localPosition = new Vector2(500, 40);
+        MaxDispGameObject2.GetComponent<Text>().text = "Max Displacement:" + "\n" + "0 mm at : 0 m";
         MaxDispGameObject2.GetComponent<Text>().font = Font;
         MaxDispGameObject2.GetComponent<Text>().fontStyle = FontStyle.Bold;
-        MaxDispGameObject2.GetComponent<Text>().fontSize = 23;
+        MaxDispGameObject2.GetComponent<Text>().fontSize = 28;
         MaxDispGameObject2.GetComponent<Text>().color = new Color32(255, 0, 0, 255);
         MaxDispGameObject2.GetComponent<Shadow>().effectColor = new Color32(0, 0, 0, 255);
         MaxDispGameObject2.GetComponent<Shadow>().effectDistance = new Vector2(1, -1);
 
-        MaxDisplacementLocationObject2 = new GameObject("MaxDisplacementLocation1", typeof(Text), typeof(Shadow));
-        MaxDisplacementLocationObject2.transform.SetParent(transform, false);
-        MaxDisplacementLocationObject2.GetComponent<RectTransform>().sizeDelta = new Vector2(250, 90);
-        MaxDisplacementLocationObject2.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
-        MaxDisplacementLocationObject2.transform.localPosition = new Vector2(570, -90);
-        MaxDisplacementLocationObject2.GetComponent<Text>().text = "Max Displacement at:" + "\n" + "0 m";
-        MaxDisplacementLocationObject2.GetComponent<Text>().font = Font;
-        MaxDisplacementLocationObject2.GetComponent<Text>().fontStyle = FontStyle.Bold;
-        MaxDisplacementLocationObject2.GetComponent<Text>().fontSize = 23;
-        MaxDisplacementLocationObject2.GetComponent<Text>().color = new Color32(255, 0, 0, 255);
-        MaxDisplacementLocationObject2.GetComponent<Shadow>().effectColor = new Color32(0, 0, 0, 255);
-        MaxDisplacementLocationObject2.GetComponent<Shadow>().effectDistance = new Vector2(1, -1);
+        //MaxDisplacementLocationObject2 = new GameObject("MaxDisplacementLocation1", typeof(Text), typeof(Shadow));
+        //MaxDisplacementLocationObject2.transform.SetParent(transform, false);
+        //MaxDisplacementLocationObject2.GetComponent<RectTransform>().sizeDelta = new Vector2(250, 90);
+        //MaxDisplacementLocationObject2.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
+        //MaxDisplacementLocationObject2.transform.localPosition = new Vector2(570, -90);
+        //MaxDisplacementLocationObject2.GetComponent<Text>().text = "Max Displacement at:" + "\n" + "0 m";
+        //MaxDisplacementLocationObject2.GetComponent<Text>().font = Font;
+        //MaxDisplacementLocationObject2.GetComponent<Text>().fontStyle = FontStyle.Bold;
+        //MaxDisplacementLocationObject2.GetComponent<Text>().fontSize = 23;
+        //MaxDisplacementLocationObject2.GetComponent<Text>().color = new Color32(255, 0, 0, 255);
+        //MaxDisplacementLocationObject2.GetComponent<Shadow>().effectColor = new Color32(0, 0, 0, 255);
+        //MaxDisplacementLocationObject2.GetComponent<Shadow>().effectDistance = new Vector2(1, -1);
     }
 
     public void ChangeMaxDisplacement()
@@ -260,10 +284,9 @@ public class Graph_Displacement : MonoBehaviour
         {
             MaxDispacement1 = Min1;
         }
-        MaxDispGameObject1.GetComponent<Text>().text = "Max Displacement : " + "\n" + MaxDispacement1 + " mm";
-
         float MaxDisplacementLocation1 = (float)Graph_Displacement.valueList1.IndexOf(MaxDispacement1) * length1 * 4 / (Graph_Displacement.valueList1.Count() - 1);
-        MaxDisplacementLocationObject1.GetComponent<Text>().text = "Max Displacement at : " + "\n" + MaxDisplacementLocation1 + " m";
+        MaxDispGameObject1.GetComponent<Text>().text = "Max Displacement : " + "\n" + MaxDispacement1 + " mm at : " + MaxDisplacementLocation1 + " m";
+        //MaxDisplacementLocationObject1.GetComponent<Text>().text = "Max Displacement at : " + "\n" + MaxDisplacementLocation1 + " m";
 
         float MaxDispacement2 = 0;
         float Max2 = Graph_Displacement.valueList2.Max();
@@ -276,10 +299,9 @@ public class Graph_Displacement : MonoBehaviour
         {
             MaxDispacement2 = Min2;
         }
-        MaxDispGameObject2.GetComponent<Text>().text = "Max Displacement : " + "\n" + MaxDispacement2 + " mm";
-
         float MaxDisplacementLocation2 = (float)Graph_Displacement.valueList2.IndexOf(MaxDispacement2) * length2 * 4 / (Graph_Displacement.valueList2.Count() - 1);
-        MaxDisplacementLocationObject2.GetComponent<Text>().text = "Max Displacement at : " + "\n" + MaxDisplacementLocation2 + " m";
+        MaxDispGameObject2.GetComponent<Text>().text = "Max Displacement : " + "\n" + MaxDispacement2 + " mm at : " + MaxDisplacementLocation2 + " m";
+        //MaxDisplacementLocationObject2.GetComponent<Text>().text = "Max Displacement at : " + "\n" + MaxDisplacementLocation2 + " m";
     }
     private void ShowGraph(List<float> valueList1, List<float> valueList2, IGraphVisual graphVisual1, IGraphVisual graphVisual2, int maxVisibleValueAmount = -1, Func<float, string> getAxisLabelX = null, Func<int, string> getAxisLabelY = null)
     {

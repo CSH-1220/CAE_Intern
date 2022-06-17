@@ -17,8 +17,7 @@ public class InfomationWindowControl : MonoBehaviour
 
     private void Start()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 4)
-        {
+
             BoundaryCondition1.transform.GetChild(BCPage.Parameter1).gameObject.SetActive(true);
             Section1.transform.GetChild(SPage.Parameter1).gameObject.SetActive(true);
             Length1.transform.GetChild(LPage.Parameter1).gameObject.SetActive(true);
@@ -28,6 +27,5 @@ public class InfomationWindowControl : MonoBehaviour
             Section2.transform.GetChild(SPage.Parameter2).gameObject.SetActive(true);
             Length2.transform.GetChild(LPage.Parameter2).gameObject.SetActive(true);
             Bracing2.transform.GetChild(BPage.Parameter2).gameObject.SetActive(true);
-        }
     }
 }
