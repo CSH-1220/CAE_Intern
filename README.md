@@ -1,11 +1,11 @@
 # CAE Summer Internship
 # Project Name: Development and Evaluation of Mixed Reality-Based Education Tools on Structural Mechanics
 
-### 專案三個階段
+## 專案三個階段
 
-#### 1. 結構分析 
-#### 2. MR in unity
-#### 3. 評估
+### 1. 結構分析 
+### 2. MR in unity
+### 3. 評估
 
 ## Week 1:
 
