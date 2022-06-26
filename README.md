@@ -13,22 +13,6 @@ Project Name: Development and Evaluation of Mixed Reality-Based Education Tools 
 
 **學習操作GitHub(推薦使用GitHub Desktop、可以上網查一下unity可以git ignore的檔案)** 
 
-連結：
-
-a. Brackeys使用GitHub Desktop做版本控制：
-
-* https://www.youtube.com/watch?v=qpXxcvS-g3g
-
-* https://iter01.com/564899.html
-
-b. GitHub操作：
-
-* https://www.youtube.com/watch?v=Q9ECyrjbh1A&list=PL2SrkGHjnWcxw6N1-hg34nWy8UWsFOn5V&index=1
-
-* https://www.youtube.com/watch?v=Jzlbr4izdpc&list=PL2SrkGHjnWcyTc7LzJwXKAxTH1LlNfoZU&index=1
-
-* https://medium.com/daai/git-%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E4%B8%80%E4%B8%8B%E5%90%A7-6e26fc432b16
-
 ### B. 介面切換與設計：
 
 a. 簡單2D UI 設置
