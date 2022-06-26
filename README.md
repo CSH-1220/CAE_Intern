@@ -11,7 +11,7 @@ Project Name: Development and Evaluation of Mixed Reality-Based Education Tools 
 
 ## 目前專案的操作影片：
 
-** https://drive.google.com/file/d/1evnwtnGOEWLYadFbzHtkxiKfW7-8Ge5k/view?usp=sharing
+**https://drive.google.com/file/d/1evnwtnGOEWLYadFbzHtkxiKfW7-8Ge5k/view?usp=sharing**
 
 ## A. 熟悉版本控制
 
