@@ -1,24 +1,12 @@
 ﻿<Properties StartupConfiguration="{536EFD59-BE47-07A9-CE3C-5D7ED1C3D318}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Scene04/Graph/Graph_Displacement.cs">
     <Files>
-      <File FileName="Assets/Scripts/Scene03/CheckTurnPageButton_CreateScene.cs" Line="61" Column="43" />
-      <File FileName="Assets/QuantityControl.cs" Line="62" Column="14" />
-      <File FileName="Assets/ColumnInfoSwitchControl.cs" Line="30" Column="40" />
-      <File FileName="Assets/Scripts/Scene03/CreateScenePage.cs" Line="113" Column="51" />
-      <File FileName="Assets/SwitchControl.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="32" Column="6" />
+      <File FileName="Assets/Scripts/Scene04/Graph/Graph_Displacement.cs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Buckling_AR" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1f137048-60d7-4223-bc6e-47ed0b12d41f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="db218aee-1736-4d6f-b9b2-34bf26e4f1f2" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
