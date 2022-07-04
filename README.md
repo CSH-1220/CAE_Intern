@@ -36,15 +36,14 @@ a. 簡單2D UI 設置
 ### A. 2D Graph 練習
 
 **依附檔繪製力圖，橫軸--時間，縱軸--力，單位:(KN)** 
-[forceresultant.txt](https://github.com/CSH-1220/CAE_Intern/files/9040569/forceresultant.txt)
+
+檔案：[forceresultant.txt](https://github.com/CSH-1220/CAE_Intern/files/9040569/forceresultant.txt)
 
 ### B. 依教學影片建立簡易的 3D小遊戲
 
 * https://youtube.com/playlist?list=PLPV2KyIb3jR53Jce9hP7G5xC4O9AgnOuL
 
-### C. Mesh tutorial
-
-#### 學習呈現結構物本體的方式
+### C. Mesh tutorial(學習呈現結構物本體的方式)
 
 * unity 中 mesh 的基本觀念: https://youtube.com/playlist?list=PL5KbKbJ6Gf9-d303Lk8TGKCW-t5JsBdtB
 
