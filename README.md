@@ -47,4 +47,24 @@ a. 簡單2D UI 設置
 
 * unity 中 mesh 的基本觀念: https://youtube.com/playlist?list=PL5KbKbJ6Gf9-d303Lk8TGKCW-t5JsBdtB
 
+## Week 3:
+
+### 目標：1. 教材架構初想 2.  Unity Mesh 練習 + 探索AR功能
+
+### A. Mesh Tutorial完成
+
+#### 小任務：
+* 1.利用程式把一個正立方體的8個頂點決定出來後生成mesh
+* 2.多加入一個高度或個數的參數後利用成自動生成座標，讓正立方體可以一直疊加上去然後生成mesh
+
+### B. AR影片觀看(based mostly on AR Foundation)
+
+* https://www.youtube.com/watch?v=0mpsiO2lCx0&list=PL6VJLOFcTt7awvyIGIbLLPOBrW6-Y1R-J
+
+### C. 持續架構之後的教材
+
+## Week 4:
+
+### 目標：1. 完成期中報告書
+
 
