@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/02_ExploreScene.unity
+- path: Assets/Scenes/Mesh.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -1,12 +1,15 @@
 ﻿<Properties StartupConfiguration="{536EFD59-BE47-07A9-CE3C-5D7ED1C3D318}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Scene04/Graph/Graph_Displacement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Mesh/CubeMeshData.cs">
     <Files>
-      <File FileName="Assets/Scripts/Scene04/Graph/Graph_Displacement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Mesh/CubeMeshData.cs" Line="39" Column="1" />
+      <File FileName="Assets/Scripts/Mesh/ProceduralCube.cs" Line="26" Column="2" />
+      <File FileName="Assets/Scripts/Mesh/VoxelData.cs" Line="8" Column="21" />
+      <File FileName="Assets/Scripts/Mesh/VoxelRender.cs" Line="14" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="db218aee-1736-4d6f-b9b2-34bf26e4f1f2" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7614ab68-9d4d-4cd9-9809-88b5af02fa2e" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
